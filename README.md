@@ -36,8 +36,6 @@ Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures
 
 ## Sample Resort Details
 
-### Paoli Peaks
-
 | Paoli Peaks | Indiana |
 | ----------- | ----------- |
 | Links | Conditions, Map |
@@ -48,7 +46,7 @@ Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures
 
 
 ## Feature Backlog
-- [X] colelct ski resort info in json file
+- [X] collect ski resort info in json file
 - [ ] write refresh() function to update the weather forecast for all resorts
 - [ ] write the forecasts() function to display the forecasts for all resorts
 - [ ] write the details(resort_id) function to display the details for a resort
