@@ -1,0 +1,193 @@
+{
+    "resorts" : [
+        {
+            "name" : "Perfect North Slopes",
+            "location" : {
+                "state" : "Indiana",
+                "state-short" : "IN",
+                "address" : "19074 Perfect Lane, Lawrenceburg, IN 47025",
+                "lat" : "39.15107924069298",
+                "long" : "-84.8858208026754"
+            },
+            "links" : {
+                "main-url" : "https://www.perfectnorth.com/",
+                "conditions-url" : "https://www.perfectnorth.com/snow-report",
+                "map-url" : "https://goo.gl/maps/M9rqdn9arLbXF52o8"
+            },
+            "stats" : {
+                "acres" : "100",
+                "trails" : "23",
+                "lifts" : "7",
+                "vertical" : "400"
+            }
+        },
+        {
+            "name" : "Paoli Peaks",
+            "location" : {
+                "state" : "Indiana",
+                "state-short" : "IN",
+                "address" : "2798 W. County Road 25 S, Paoli, IN 47454",
+                "lat" : "38.5574763058665",
+                "long" : "-86.50665478920111"
+            },
+            "links" : {
+                "mail-url" : "https://www.paolipeaks.com/",
+                "conditions-url" : "https://www.paolipeaks.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
+                "map-url" : "https://goo.gl/maps/aA5bWk8ppQsCMBBK9"
+            },
+            "stats" : {
+                "acres" : "65",
+                "trails" : "17",
+                "lifts" : "8",
+                "vertical" : "300"
+            }
+        },
+        {
+            "name" : "Ober Gatlinburg Ski Area",
+            "location" : {
+                "state" : "Tennessee",
+                "state-short" : "TN",
+                "address" : "1339 Ski Mountain Rd, Gatlinburg, TN 37738",
+                "lat" : "35.70335888907001",
+                "long" : "-83.558261402745"
+            },
+            "links" : {
+                "url" : "https://obergatlinburg.com/",
+                "conditions-url" : "https://obergatlinburg.com/slope-report/",
+                "map-url" : "https://goo.gl/maps/AoGpKQNmymV4kWVy9"
+            },
+            "stats" : {
+                "acres" : "NA",
+                "trails" : "10",
+                "lifts" : "5",
+                "vertical" : "556"
+            }
+        },
+        {
+            "name" : "Winterplace Ski Resort",
+            "location" : {
+                "state" : "West Virginia",
+                "state-short" : "WV",
+                "address" : "100 Old Flat Top Mountain Road, Ghent, WV 25843",
+                "lat" : "37.596503114957756",
+                "long" : "-81.11997013343228"
+            },
+            "links" : {
+                "url" : "https://www.winterplace.com/",
+                "conditions-url" : "https://www.winterplace.com/snow-report",
+                "map-url" : "https://goo.gl/maps/zCT2Ns2rjFdxHYfg6"
+            },
+            "stats" : {
+                "acres" : "90",
+                "trails" : "27",
+                "lifts" : "9",
+                "vertical" : "603"
+            }
+        },
+        {
+            "name" : "Snowshoe Mountain",
+            "location" : {
+                "state" : "West Virginia",
+                "state-short" : "WV",
+                "address" : "10 Snowshoe Drive, Snowshoe, WV 26209",
+                "lat" : "38.41481233984178",
+                "long" : "-80.03262427386323"
+            },
+            "links" : {
+                "main-url" : "https://www.snowshoemtn.com/",
+                "conditions-url" : "https://www.snowshoemtn.com/mountain-info/mountain-report#/all-trails",
+                "map-url" : "https://goo.gl/maps/gaTUXeYyDgTXPp249"
+            },
+            "stats" : {
+                "acres" : "244",
+                "trails" : "60",
+                "lifts" : "14",
+                "vertical" : "1500"
+            }
+        },
+        {
+            "name" : "Canaan Valley Resort",
+            "location" : {
+                "state" : "West Virginia",
+                "state-short" : "WV",
+                "address" : "230 Main Lodge Road, Davis, WV 26260",
+                "lat" : "39.02460711416216",
+                "long" : "-79.46477768733696"
+            },
+            "links" : {
+                "url" : "https://www.canaanresort.com/",
+                "conditions-url" : "https://www.canaanresort.com/trail-report/",
+                "map-url" : "https://goo.gl/maps/v8zBhXXSV23cZurv8"
+            },
+            "stats" : {
+                "acres" : "78",
+                "trails" : "39",
+                "lifts" : "3",
+                "vertical" : "850"
+            }
+        },
+        {
+            "name" : "Cataloochee Ski Area",
+            "location" : {
+                "state" : "North Carolina",
+                "state-short" : "NC",
+                "address" : "1080 Ski Lodge Road, Maggie Valley, NC 28751",
+                "lat" : "35.563611159813924",
+                "long" : "-83.09020697394982"
+            },
+            "links" : {
+                "url" : "https://cataloochee.com/",
+                "conditions-url" : "https://cataloochee.com/the-mountain/snow-report/",
+                "map-url" : "https://goo.gl/maps/eKPzcL1hSrYh2bX96"
+            },
+            "stats" : {
+                "acres" : "50",
+                "trails" : "17",
+                "lifts" : "5",
+                "vertical" : "740"
+            }
+        },
+        {
+            "name" : "Beech Mountain Resort",
+            "location" : {
+                "state" : "North Carolina",
+                "state-short" : "NC",
+                "address" : "1007 Beech Mountain Pkwy, Beech Mountain, NC 28604",
+                "lat" : "36.18515248681911",
+                "long" : "-81.87989331626032"
+            },
+            "links" : {
+                "url" : "https://www.beechmountainresort.com/",
+                "conditions-url" : "https://www.beechmountainresort.com/mountain/winter-trail-map/",
+                "map-url" : "https://goo.gl/maps/AtteeCn4Cz9ZFtjS6"
+            },
+            "stats" : {
+                "acres" : "95",
+                "trails" : "15",
+                "lifts" : "10",
+                "vertical" : "830"
+            }
+        },
+        {
+            "name" : "Sugar Mountain Resort",
+            "location" : {
+                "state" : "North Carolina",
+                "state-short" : "NC",
+                "address" : "1009 Sugar Mountain Drive, Sugar Mountain, NC 28604",
+                "lat" : "36.13028845112314",
+                "long" : "-81.85913763160436"
+            },
+            "links" : {
+                "url" : "http://www.skisugar.com/",
+                "conditions-url" : "http://www.skisugar.com/#map",
+                "map-url" : "https://goo.gl/maps/A6KDEiMkBZA47aKt9"
+            },
+            "stats" : {
+                "acres" : "115",
+                "trails" : "20",
+                "lifts" : "6",
+                "vertical" : "1200"
+            }
+        }
+    ]
+}
