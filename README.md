@@ -7,10 +7,20 @@ Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures
 
 > If the temperature is around 30 F (-1 C), you need a fairly low relative humidity (less than 30 percent) for good snow-making conditions. If the temperature is less than 20 F (-6.7 C), you can make snow fairly easily even if the relative humidity is 100 percent. A temperature in the teens is ideal for snow-making.
 
+Translating raw Temperature and Relative Humidity data into wet-bulb temperature is done with the following formula:
+
+> Tw = T * arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + arctan([T + rh])[0] - arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * arctan([0.023101 * rh])[0] - 4.686035
+
+Where
+- Tw = wet-bulb temperature
+- T = temperature (C)
+- rh = Relative Humidity (%)
+
 **Sources** 
 
 - [howstuffworks.com](https://adventure.howstuffworks.com/outdoor-activities/snow-sports/snow-maker3.htm)
 - [snowathome.com](https://www.snowathome.com/pdf/wet_bulb_chart_fahrenheit.pdf)
+- [omnicalculator.com](https://www.omnicalculator.com/physics/wet-bulb#how-to-calculate-the-wet-bulb-temperature)
 
 ## How do I use it?
 
@@ -47,7 +57,7 @@ Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures
 
 ## Feature Backlog
 - [X] collect ski resort info in json file
-- [ ] write refresh() function to update the weather forecast for all resorts
+- [X] write refresh() function to update the weather forecast for all resorts
 - [ ] write the forecasts() function to display the forecasts for all resorts
 - [ ] write the details(resort_id) function to display the details for a resort
 - [ ] implement the argument parser with argparse
