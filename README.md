@@ -66,5 +66,8 @@ Where
 - [X] write refresh() function to update the weather forecast for all resorts
 - [X] write the forecasts() function to display the forecasts for all resorts
 - [X] write the details(resort_id) function to display the details for a resort
-- [ ] implement the argument parser with argparse
+- [X] implement the argument parser with argparse
 - [X] implement console formatting with Rich
+- [ ] add unit testing
+- [ ] add error handling
+- [ ] add/complete comments

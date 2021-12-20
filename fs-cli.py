@@ -6,23 +6,34 @@ import numpy
 from rich import print, style
 from rich.console import Console
 from rich.table import Table
+import argparse
 
-# helper function to translate fahrenheit to celcius
-# takes a temperature in Fahrenheit
-# returns a temperature in Celcius
-def calc_celcius(Tf):
+def calc_celcius(Tf) -> float:
+    """Return a temperature converted from Fahrenheit to Celcius
+    
+    Keyword arguments:
+    Tf -- the temperature in Fahrenheit
+    """
     return (Tf - 32) * (5/9)
 
-# helper function to translate celcius to fahrenheit
-# takes a temperature in Celcius
-# returns a temperature in Fahrenheit
-def calc_fahrenheit(Tc):
+def calc_fahrenheit(Tc) -> float:
+    """Return a temperature converted from Celcius to Fharenheit
+    
+    Keyword arguments:
+    Tc -- the temperature in Celcius
+    """
     return (Tc * (9/5)) + 32
 
 # calculate the wet bulb temperature
 # takes the temperature (T) in Fahrenheit and the Relative Humitidy (rh) 
 # returns the wet-bulb temperature in Fahrenheit
-def calc_wet_bulb(T, rh):
+def calc_wet_bulb(T, rh) -> float:
+    """Return a wet-bulb temperature based on Temperature and Relative Humidity
+    
+    Keyword arguments:
+    T -- the temperature in Celcius
+    rh -- the relative humidity
+    """
     T = calc_celcius(T)   # convert temp to celcius
     rh /= 100             # convert to percentage
     Tw = T * numpy.arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + numpy.arctan([T + rh])[0] - numpy.arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * numpy.arctan([0.023101 * rh])[0] - 4.686035
@@ -128,13 +139,26 @@ def detail(resort_id):
             
             match = 1
 
-
     if match == 0:
         print('invalid id')        
 
+# controller function for the command line interface
 def main():
-    # refresh()
-    forecast()
-    # detail(1)
+    parser = argparse.ArgumentParser(description='Faux Snow Forecast app')
+    parser.add_argument('--refresh',  action = 'store_true', help='Refresh the forecast data')
+    parser.add_argument('--forecast',  action = 'store_true', help='Display the forecast data')
+    parser.add_argument('--detail',  action = 'store_true', help='Display the resort details')
+    parser.add_argument('id', type=int, nargs = '?', help='ID of the resort to display')
+    args = parser.parse_args()
+
+    if args.refresh:
+        refresh()
+    elif args.forecast:
+        forecast()
+    elif args.detail:
+        detail(args.id)
+    else:
+        parser.format_usage()
+
 
 main()
