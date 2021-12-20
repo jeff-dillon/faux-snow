@@ -1,13 +1,21 @@
 import requests
 import json
+import datetime
 import config
 import numpy
+from rich import print, style
+from rich.console import Console
+from rich.table import Table
 
 # helper function to translate fahrenheit to celcius
+# takes a temperature in Fahrenheit
+# returns a temperature in Celcius
 def calc_celcius(Tf):
     return (Tf - 32) * (5/9)
 
 # helper function to translate celcius to fahrenheit
+# takes a temperature in Celcius
+# returns a temperature in Fahrenheit
 def calc_fahrenheit(Tc):
     return (Tc * (9/5)) + 32
 
@@ -30,8 +38,8 @@ def load_ski_resorts():
     return data
 
 # loads the forecast data from a file and returns the json
-def load_forecast_file():
-    f = open('data/forecast.json')
+def load_forecast_file(id):
+    f = open(f'data/forecast-{id}.json')
     try:
         data = json.load(f)
     finally:
@@ -50,33 +58,83 @@ def save_forecast(f, id):
     with open(f'data/forecast-{id}.json', 'w') as outfile:
         json.dump(f, outfile, indent=4)
 
+# returns a list of forecast summaries for all resorts
+def forecast_summary():
+    forecastSummary = []
+    resorts = load_ski_resorts()
+    for ski_resort in resorts['resorts']:
+        forecastData = {
+                'id' : ski_resort['id'],
+                'name' : ski_resort['name'],
+                'state' : ski_resort['location']['state-short']
+            }
+        snowDates = ''
+        forecast = load_forecast_file(ski_resort['id'])
+        for period in forecast['response'][0]['periods']:
+            minWetBulbTemp = round(calc_wet_bulb(period['minTempF'], period['minHumidity']))
+            maxWetBulbTemp = round(calc_wet_bulb(period['maxTempF'], period['maxHumidity']))
+            snow_date = str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date())
+            if minWetBulbTemp <= 20 or maxWetBulbTemp <= 20:
+                if len(snowDates) > 0:
+                    snowDates += ', '
+                snowDates = snowDates + snow_date + " "
+        forecastData['snow-days'] = snowDates
+        forecastSummary.append(forecastData)
+    return forecastSummary
+
+# get the weather forecast for each ski resort and save it to file
 def refresh():
     resorts = load_ski_resorts()
     for ski_resort in resorts['resorts']:
         forecast = load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
         save_forecast(forecast, ski_resort['id'])
 
+# read the ski resorts and weather forecasts from file and print a summary to the screen
+# returns nothing
 def forecast():
-    pass
-    # print("==========================================================")
-    # print("ID: ", ski_resort['id'])
-    # print("Resort: ", ski_resort['name'])
-    # # print(forecast['response'])
-    # for period in forecast['response'][0]['periods']:
-    #     # print(period)
-    #     print("Date: ", period['validTime'])
-    #     print("Min Temp F: ", period['minTempF'])
-    #     print("Max Temp F: ", period['maxTempF'])
-    #     print("Min Humidity: ", period['minHumidity'])
-    #     print("Max Humidity: ", period['maxHumidity'])
-    #     print("Min Wet Bulb Temp F: ", round(calc_wet_bulb(int(period['minTempF']), int(period['minHumidity']))))
-    #     print("Max Wet Bulb Temp F: ", round(calc_wet_bulb(int(period['maxTempF']), int(period['maxHumidity']))))
-    #     print('\n')
+    fs = forecast_summary()
 
+    table = Table(title="Faux-Snow Forecast")
+    table.add_column("ID", justify="left", style="cyan", no_wrap=True)
+    table.add_column("Resort", justify="left", style="cyan", no_wrap=True)
+    table.add_column("Faux Snow Days", justify="left", style="cyan", no_wrap=True)
+
+    for resort in fs:
+        table.add_row(resort['id'], "(" + resort['state'] + ") " + resort['name'], resort['snow-days'])
+
+    console = Console()
+    console.print(table)
+    
+
+# read the ski resorts from file and print the details of one resort to the screen
+# takes a resort id for the requested resort
+# returns nothing
 def detail(resort_id):
-    pass
+    resorts = load_ski_resorts()
+    match = 0
+    for ski_resort in resorts['resorts']:
+        if str(ski_resort['id']) == str(resort_id):
+            table = Table(title="Ski Resort Details")
+            table.add_column(ski_resort['name'], justify="left", style="cyan", no_wrap=True)
+            table.add_column(ski_resort['location']['address'], justify="left", style="cyan", no_wrap=True)
+            table.add_row("Links", ski_resort['links']['conditions-url'])
+            table.add_row("Skiable Terrain", ski_resort['stats']['acres'])
+            table.add_row("# Lifts", ski_resort['stats']['lifts'])
+            table.add_row("# Trails", ski_resort['stats']['trails'])
+            table.add_row("Vertical Drop", ski_resort['stats']['vertical'])
+            
+            console = Console()
+            console.print(table)
+            
+            match = 1
+
+
+    if match == 0:
+        print('invalid id')        
 
 def main():
-    refresh()
+    # refresh()
+    forecast()
+    # detail(1)
 
 main()

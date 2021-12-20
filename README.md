@@ -9,7 +9,13 @@ Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures
 
 Translating raw Temperature and Relative Humidity data into wet-bulb temperature is done with the following formula:
 
-> Tw = T * arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + arctan([T + rh])[0] - arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * arctan([0.023101 * rh])[0] - 4.686035
+> `Tw = T * arctan(0.151977 * (rh + 8.313659)^(1/2)) `
+> 
+> `+ arctan(T + rh) `
+> 
+> `- arctan(rh - 1.676331) + 0.00391838 *(rh)^(3/2) `
+> 
+> `* arctan(0.023101 * rh) - 4.686035`
 
 Where
 - Tw = wet-bulb temperature
@@ -58,7 +64,7 @@ Where
 ## Feature Backlog
 - [X] collect ski resort info in json file
 - [X] write refresh() function to update the weather forecast for all resorts
-- [ ] write the forecasts() function to display the forecasts for all resorts
-- [ ] write the details(resort_id) function to display the details for a resort
+- [X] write the forecasts() function to display the forecasts for all resorts
+- [X] write the details(resort_id) function to display the details for a resort
 - [ ] implement the argument parser with argparse
-- [ ] implement console formatting with Rich
+- [X] implement console formatting with Rich
