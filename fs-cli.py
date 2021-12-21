@@ -168,6 +168,7 @@ def refresh():
     for ski_resort in resorts['resorts']:
         forecast = load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
         save_forecast(forecast, ski_resort['id'])
+        print('Updated forecast for ', ski_resort['name'])
 
 def forecast():
     """read the ski resorts and weather forecasts from file and print a summary to the screen
