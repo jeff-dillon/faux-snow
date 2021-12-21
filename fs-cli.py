@@ -33,10 +33,10 @@ def calc_wet_bulb(T, rh) -> float:
     T -- the temperature in Celcius
     rh -- the relative humidity
     """
-    T = calc_celcius(T)   # convert temp to celcius
-    rh /= 100             # convert to percentage
+    T = calc_celcius(T)   
+    rh /= 100             
     Tw = T * numpy.arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + numpy.arctan([T + rh])[0] - numpy.arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * numpy.arctan([0.023101 * rh])[0] - 4.686035
-    return calc_fahrenheit(Tw)
+    return calc_fahrenheit(Tw) 
 
 def is_good_conditions(T, rh) -> bool:
     """Return whether or not the temperature and relative humidity are favorable for snow making
@@ -119,7 +119,6 @@ def save_forecast(f, id):
     with open(f'data/forecast-{id}.json', 'w') as outfile:
         json.dump(f, outfile, indent=4)
 
-# returns a list of forecast summaries for all resorts
 def forecast_summary():
     """returns a list of forecast summaries for all resorts
 
@@ -203,7 +202,7 @@ def detail(resort_id):
     """read the ski resorts from file and print the details of one resort to the screen
     
     Keyword arguments: 
-    resort_id -- the is of the ski resort
+    resort_id -- the id of the ski resort
     """
     resorts = load_ski_resorts()
     match = 0
