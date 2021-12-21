@@ -43,12 +43,7 @@ Where
 
 ## Sample Forecast
 
-| ID | Resort | Faux Snow Days |
-| ----------- | ----------- | ----------- |
-| 1 | (IN) Paoli Peaks | 12/18, 12/19 |
-| 2 | (IN) Perfect North Slopes | 12/19, 12/20 |
-| 3 | (WV) Snowshoe | None |
-| 4 | (TN) Ober Gatlinberg | None |
+![forecast screenshot](images/forecast.png)
 
 ## Sample Resort Details
 
