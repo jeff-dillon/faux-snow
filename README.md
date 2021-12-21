@@ -47,14 +47,7 @@ Where
 
 ## Sample Resort Details
 
-| Paoli Peaks | Indiana |
-| ----------- | ----------- |
-| Links | Conditions, Map |
-| Skiable Terrain | 65 acres |
-| # Lifts | 8 |
-| # Trails | 17 |
-| Vertical Drop | 300 feet |
-
+![details screenshot](images/details.png)
 
 ## Feature Backlog
 - [X] collect ski resort info in json file
