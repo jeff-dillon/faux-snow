@@ -24,9 +24,8 @@ def calc_fahrenheit(Tc) -> float:
     """
     return (Tc * (9/5)) + 32
 
-# calculate the wet bulb temperature
-# takes the temperature (T) in Fahrenheit and the Relative Humitidy (rh) 
-# returns the wet-bulb temperature in Fahrenheit
+# Function immplemented but not in use. 
+# Easier to just test the boundaries of the temp/rel. humidity matrix.
 def calc_wet_bulb(T, rh) -> float:
     """Return a wet-bulb temperature based on Temperature and Relative Humidity
     
@@ -39,8 +38,45 @@ def calc_wet_bulb(T, rh) -> float:
     Tw = T * numpy.arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + numpy.arctan([T + rh])[0] - numpy.arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * numpy.arctan([0.023101 * rh])[0] - 4.686035
     return calc_fahrenheit(Tw)
 
-# loads the ski resorts data from a file and returns the json
-def load_ski_resorts():
+def is_good_conditions(T, rh) -> bool:
+    """Return whether or not the temperature and relative humidity are favorable for snow making
+    
+    Keyword arguments: 
+    T -- the temperature in Celcius 
+    rh -- the relative humidity
+    """
+    
+    conditions_are_good = False
+
+    if T <= 20:
+        conditions_are_good =  True
+    elif T <= 21 and rh <= 94:
+        conditions_are_good =  True
+    elif T <= 22 and rh <= 85:
+        conditions_are_good =  True
+    elif T <= 23 and rh <= 76:
+        conditions_are_good =  True
+    elif T <= 24 and rh <= 66:
+        conditions_are_good =  True
+    elif T <= 25 and rh <= 54:
+        conditions_are_good =  True
+    elif T <= 26 and rh <= 39:
+        conditions_are_good =  True
+    elif T <= 27 and rh <= 25:
+        conditions_are_good =  True
+    elif T <= 28 and rh <= 15:
+        conditions_are_good =  True
+    elif T <= 29 and rh <= 10:
+        conditions_are_good =  True
+    else:
+        conditions_are_good = False
+    
+    return conditions_are_good
+
+def load_ski_resorts() -> dict:
+    """Returns the ski resorts data from a file
+    
+    """
     f = open(f'data/ski-resorts.json')
     try:
         data = json.load(f)
@@ -48,8 +84,12 @@ def load_ski_resorts():
         f.close()
     return data
 
-# loads the forecast data from a file and returns the json
-def load_forecast_file(id):
+def load_forecast_file(id) -> dict:
+    """Return forecast data from a file
+    
+    Keyword arguments: 
+    id -- the resort_id to determine which forecast file to pull 
+    """
     f = open(f'data/forecast-{id}.json')
     try:
         data = json.load(f)
@@ -57,70 +97,114 @@ def load_forecast_file(id):
         f.close()
     return data
 
-# loads the weather forecast for a given lat / lon coordinate
-def load_forecast(lat, lon):
+def load_forecast(lat, lon) -> dict:
+    """Return weather foreacast for a given lat/long coordinate
+    
+    Keyword arguments: 
+    lat -- the latitude of the weather forecast coordinates
+    long -- the longitude of the weather forecast coordinates
+    """
     url = config.AERISWEATHER_API_URL+lat+','+lon
     response = requests.request("GET", url, headers=config.AERIS_API_HEADERS)
     data = json.loads(response.text)
     return data
 
-# save the weather forecast json to a text file
 def save_forecast(f, id):
+    """save the weather forecast json to a text file
+    
+    Keyword arguments: 
+    f -- the forecast data
+    id -- the is of the ski resort
+    """
     with open(f'data/forecast-{id}.json', 'w') as outfile:
         json.dump(f, outfile, indent=4)
 
 # returns a list of forecast summaries for all resorts
 def forecast_summary():
+    """returns a list of forecast summaries for all resorts
+
+    """
+    
     forecastSummary = []
+    
     resorts = load_ski_resorts()
+    
     for ski_resort in resorts['resorts']:
+        
         forecastData = {
                 'id' : ski_resort['id'],
                 'name' : ski_resort['name'],
-                'state' : ski_resort['location']['state-short']
+                'state' : ski_resort['location']['state-short'],
+                'forecast' : []
             }
-        snowDates = ''
+
         forecast = load_forecast_file(ski_resort['id'])
+        
         for period in forecast['response'][0]['periods']:
-            minWetBulbTemp = round(calc_wet_bulb(period['minTempF'], period['minHumidity']))
-            maxWetBulbTemp = round(calc_wet_bulb(period['maxTempF'], period['maxHumidity']))
-            snow_date = str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date())
-            if minWetBulbTemp <= 20 or maxWetBulbTemp <= 20:
-                if len(snowDates) > 0:
-                    snowDates += ', '
-                snowDates = snowDates + snow_date + " "
-        forecastData['snow-days'] = snowDates
+            
+            conditions = ''
+            if period['snowIN'] != 0: 
+                conditions = 'Snow'
+            elif is_good_conditions(period['minTempF'],period['minHumidity']):
+                conditions = 'Faux'
+            
+            forecastData['forecast'].append({
+                'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
+                'minTemp' : period['minTempF'],
+                'maxTemp' : period['maxTempF'],
+                'snowIN' : period['snowIN'],
+                'weather' : period['weather'],
+                'conditions' : conditions
+            })
+
         forecastSummary.append(forecastData)
+
     return forecastSummary
 
-# get the weather forecast for each ski resort and save it to file
 def refresh():
+    """get the weather forecast from the weather API for each ski resort and save it to file
+
+    """
     resorts = load_ski_resorts()
     for ski_resort in resorts['resorts']:
         forecast = load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
         save_forecast(forecast, ski_resort['id'])
 
-# read the ski resorts and weather forecasts from file and print a summary to the screen
-# returns nothing
 def forecast():
+    """read the ski resorts and weather forecasts from file and print a summary to the screen
+
+    """
     fs = forecast_summary()
 
     table = Table(title="Faux-Snow Forecast")
     table.add_column("ID", justify="left", style="cyan", no_wrap=True)
     table.add_column("Resort", justify="left", style="cyan", no_wrap=True)
-    table.add_column("Faux Snow Days", justify="left", style="cyan", no_wrap=True)
+    for day in fs[0]['forecast']:
+        table.add_column(day['date'], justify="center", style="cyan", no_wrap=True)
 
     for resort in fs:
-        table.add_row(resort['id'], "(" + resort['state'] + ") " + resort['name'], resort['snow-days'])
+        table.add_row(resort['id'], 
+            "(" + resort['state'] + ") " + resort['name'], 
+            resort['forecast'][0]['conditions'],
+            resort['forecast'][1]['conditions'],
+            resort['forecast'][2]['conditions'],
+            resort['forecast'][3]['conditions'],
+            resort['forecast'][4]['conditions'],
+            resort['forecast'][5]['conditions'],
+            resort['forecast'][6]['conditions'],
+        )
 
     console = Console()
     console.print(table)
     
 
-# read the ski resorts from file and print the details of one resort to the screen
-# takes a resort id for the requested resort
-# returns nothing
+
 def detail(resort_id):
+    """read the ski resorts from file and print the details of one resort to the screen
+    
+    Keyword arguments: 
+    resort_id -- the is of the ski resort
+    """
     resorts = load_ski_resorts()
     match = 0
     for ski_resort in resorts['resorts']:
