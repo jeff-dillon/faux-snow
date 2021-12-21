@@ -30,7 +30,7 @@ Where Tw = wet-bulb temperature; T = temperature (C); rh = Relative Humidity (%)
 
 ### Wet-bulb Temperature Chart
 
-|  | 10% | %20 | %30 | %40 | %50 | %60 | % 70 | %80 | %90 | %100|
+|  | 10% | 20% | 30% | 40% | 50% | 60% | 70% |80% | 90% | 100% |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | 20 | 14 | 14 | 15 | 16 | 16 | 17 | 18 | 19 | 19 | 20 |
 | 22 | 15 | 15 | 17 | 17 | 18 | 19 | 20 | 21 | 21 | 22 |
@@ -39,9 +39,9 @@ Where Tw = wet-bulb temperature; T = temperature (C); rh = Relative Humidity (%)
 | 28 | 20 | 21 | 22 | 23 | 23 | 24 | 25 | 26 | 27 | 28 |
 | 30 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30|
 
-left axis = temperature (F)
+x (horizontal) axis = temperature (F)
 
-right axis = relative humidity
+y (vertical) axis = relative humidity
 
 ## How do I use it?
 
