@@ -7,6 +7,13 @@ Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures
 
 > If the temperature is around 30 F (-1 C), you need a fairly low relative humidity (less than 30 percent) for good snow-making conditions. If the temperature is less than 20 F (-6.7 C), you can make snow fairly easily even if the relative humidity is 100 percent. A temperature in the teens is ideal for snow-making.
 
+- Source:  [howstuffworks.com](https://adventure.howstuffworks.com/outdoor-activities/snow-sports/snow-maker3.htm)
+
+> Wet bulb temperature is the lowest temperature that can be obtained by evaporating water into the air at a constant pressure. The term comes from the technique of wrapping a wet cloth around a mercury bulb thermometer and blowing air over the cloth until the water evaporates. The wet bulb temperature is always lower than the dry bulb temperature, but will be identical with 100% relative humidity. This wet bulb temperature is what snowmakers use to know when they can make snow. You can see it is possible to make snow when the temperatures are above freezing but only with very low humidity. 
+
+- Source: [snowathome.com](https://www.snowathome.com/pdf/wet_bulb_chart_fahrenheit.pdf)
+
+
 Translating raw Temperature and Relative Humidity data into wet-bulb temperature is done with the following formula:
 
 > `Tw = T * arctan(0.151977 * (rh + 8.313659)^(1/2)) `
@@ -17,16 +24,24 @@ Translating raw Temperature and Relative Humidity data into wet-bulb temperature
 > 
 > `* arctan(0.023101 * rh) - 4.686035`
 
-Where
-- Tw = wet-bulb temperature
-- T = temperature (C)
-- rh = Relative Humidity (%)
+Where Tw = wet-bulb temperature; T = temperature (C); rh = Relative Humidity (%).
 
-**Sources** 
+- Source: [omnicalculator.com](https://www.omnicalculator.com/physics/wet-bulb#how-to-calculate-the-wet-bulb-temperature)
 
-- [howstuffworks.com](https://adventure.howstuffworks.com/outdoor-activities/snow-sports/snow-maker3.htm)
-- [snowathome.com](https://www.snowathome.com/pdf/wet_bulb_chart_fahrenheit.pdf)
-- [omnicalculator.com](https://www.omnicalculator.com/physics/wet-bulb#how-to-calculate-the-wet-bulb-temperature)
+### Wet-bulb Temperature Chart
+
+|  | 10% | %20 | %30 | %40 | %50 | %60 | % 70 | %80 | %90 | %100|
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 20 | 14 | 14 | 15 | 16 | 16 | 17 | 18 | 19 | 19 | 20 |
+| 22 | 15 | 15 | 17 | 17 | 18 | 19 | 20 | 21 | 21 | 22 |
+| 24 | 17 | 18 | 18 | 19 | 20 | 21 | 22 | 22 | 23 | 24 |
+| 26 | 18 | 19 | 20 | 21 | 22 | 23 | 23 | 24 | 25 | 25 |
+| 28 | 20 | 21 | 22 | 23 | 23 | 24 | 25 | 26 | 27 | 28 |
+| 30 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30|
+
+left axis = temperature (F)
+
+right axis = relative humidity
 
 ## How do I use it?
 
