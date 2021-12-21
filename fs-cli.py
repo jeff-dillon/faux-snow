@@ -214,10 +214,10 @@ def detail(resort_id):
             resort_table.add_column(ski_resort['name'], justify="left", style="cyan", no_wrap=True)
             resort_table.add_column(ski_resort['location']['address'], justify="left", style="cyan", no_wrap=True)
             resort_table.add_row("Links", ski_resort['links']['conditions-url'])
-            resort_table.add_row("Skiable Terrain", ski_resort['stats']['acres'])
+            resort_table.add_row("Skiable Terrain", ski_resort['stats']['acres'] + " acres")
             resort_table.add_row("# Lifts", ski_resort['stats']['lifts'])
             resort_table.add_row("# Trails", ski_resort['stats']['trails'])
-            resort_table.add_row("Vertical Drop", ski_resort['stats']['vertical'])
+            resort_table.add_row("Vertical Drop", ski_resort['stats']['vertical'] + " feet")
             
             console = Console()
             console.print(resort_table)
