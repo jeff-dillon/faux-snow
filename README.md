@@ -94,6 +94,8 @@ To use this you will need an environment on your computer that can run Python ap
 
 ![details screenshot](images/details.png)
 
+![details screenshot](images/forecast-details.png)
+
 ## Feature Backlog
 - [X] collect ski resort info in json file
 - [X] write refresh() function to update the weather forecast for all resorts

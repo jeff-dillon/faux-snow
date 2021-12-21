@@ -153,6 +153,7 @@ def forecast_summary():
                 'maxTemp' : period['maxTempF'],
                 'snowIN' : period['snowIN'],
                 'weather' : period['weather'],
+                'humidity' : period['minHumidity'],
                 'conditions' : conditions
             })
 
@@ -209,18 +210,42 @@ def detail(resort_id):
     match = 0
     for ski_resort in resorts['resorts']:
         if str(ski_resort['id']) == str(resort_id):
-            table = Table(title="Ski Resort Details")
-            table.add_column(ski_resort['name'], justify="left", style="cyan", no_wrap=True)
-            table.add_column(ski_resort['location']['address'], justify="left", style="cyan", no_wrap=True)
-            table.add_row("Links", ski_resort['links']['conditions-url'])
-            table.add_row("Skiable Terrain", ski_resort['stats']['acres'])
-            table.add_row("# Lifts", ski_resort['stats']['lifts'])
-            table.add_row("# Trails", ski_resort['stats']['trails'])
-            table.add_row("Vertical Drop", ski_resort['stats']['vertical'])
+            resort_table = Table(title="Ski Resort Details")
+            resort_table.add_column(ski_resort['name'], justify="left", style="cyan", no_wrap=True)
+            resort_table.add_column(ski_resort['location']['address'], justify="left", style="cyan", no_wrap=True)
+            resort_table.add_row("Links", ski_resort['links']['conditions-url'])
+            resort_table.add_row("Skiable Terrain", ski_resort['stats']['acres'])
+            resort_table.add_row("# Lifts", ski_resort['stats']['lifts'])
+            resort_table.add_row("# Trails", ski_resort['stats']['trails'])
+            resort_table.add_row("Vertical Drop", ski_resort['stats']['vertical'])
             
             console = Console()
-            console.print(table)
-            
+            console.print(resort_table)
+
+            forecast_table = Table(title="Forecast Details")
+            forecast_table.add_column("Date", justify="left", style="cyan", no_wrap=True)
+            forecast_table.add_column("Conditions", justify="left", style="cyan", no_wrap=True)
+            forecast_table.add_column("Weather", justify="left", style="cyan", no_wrap=True)
+            forecast_table.add_column("Min Temp", justify="left", style="cyan", no_wrap=True)
+            forecast_table.add_column("Max Temp", justify="left", style="cyan", no_wrap=True)
+            forecast_table.add_column("Humidity", justify="left", style="cyan", no_wrap=True)
+            forecast_table.add_column("Snow (IN)", justify="left", style="cyan", no_wrap=True)
+
+            fs = forecast_summary()
+            for resort in fs:
+                if resort['id'] == str(resort_id):
+                    for day in resort['forecast']:
+                        forecast_table.add_row(
+                            day['date'],
+                            day['conditions'],
+                            day['weather'],
+                            str(day['minTemp']),
+                            str(day['maxTemp']),
+                            str(day['humidity']),
+                            str(day['snowIN'])
+                        )
+
+            console.print(forecast_table)
             match = 1
 
     if match == 0:
