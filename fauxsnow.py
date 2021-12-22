@@ -3,6 +3,7 @@ import requests
 import json
 import datetime
 import numpy
+import pathlib
 
 def calc_celcius(Tf) -> float:
     """Return a temperature converted from Fahrenheit to Celcius
@@ -160,3 +161,9 @@ def forecast_summary():
         forecastSummary.append(forecastData)
 
     return forecastSummary
+
+def forecast_date() -> str:
+    fname = pathlib.Path('data/forecast-1.json')
+    if fname.exists():
+        mtime = datetime.datetime.fromtimestamp(fname.stat().st_mtime)
+        return str(mtime.strftime('%a, %d %b @ %I:%M %p ET'))

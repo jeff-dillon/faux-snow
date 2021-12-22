@@ -8,7 +8,7 @@ view_count = 0
 @app.route("/")
 def welcome():
     summary = fauxsnow.forecast_summary()
-    return render_template("welcome.html", ski_resorts=summary)
+    return render_template("welcome.html", ski_resorts=summary, forecast_date=fauxsnow.forecast_date())
 
 @app.route("/detail/<int:index>")
 def detail(index):
