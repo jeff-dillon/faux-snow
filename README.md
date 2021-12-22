@@ -101,6 +101,9 @@ To use this you will need an environment on your computer that can run Python ap
 - [X] write the details(resort_id) function to display the details for a resort
 - [X] implement the argument parser with argparse
 - [X] implement console formatting with Rich
-- [ ] add unit testing
-- [ ] add error handling
-- [ ] add/complete comments
+- [ ] add unit testing for lib functions
+- [ ] add basic error handling
+- [X] add/complete comments
+- [X] refactor to separate CLI from faux-snow lib
+- [ ] implement web app in flask
+- [ ] style web app with Bootstrap
