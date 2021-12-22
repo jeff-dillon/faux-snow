@@ -86,13 +86,18 @@ To use this you will need an environment on your computer that can run Python ap
 | Show Resort Details | fs-cli.py --details resort_id |
 | Show Help | fs-cli.py --help |
 
-## Sample Forecast
+## Sample CLI Forecast
 
 ![forecast screenshot](images/forecast.png)
 
-## Sample Resort Details
+## Sample Web Forecast
+
+![forecast screenshot](images/web-forecast.png)
+
+## Sample CLI Resort Details
 
 ![details screenshot](images/details.png)
+
 
 ## Feature Backlog
 - [X] collect ski resort info in json file

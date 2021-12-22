@@ -2,7 +2,9 @@
     "resorts" : [
         {
             "id" : "1",
+            "text-id" : "perfect-north-slopes",
             "name" : "Perfect North Slopes",
+            "logo" : "perfect-north-logo.png",
             "location" : {
                 "state" : "Indiana",
                 "state-short" : "IN",
@@ -24,7 +26,9 @@
         },
         {
             "id" : "2",
+            "text-id" : "paoli-peaks",
             "name" : "Paoli Peaks",
+            "logo" : "paoli-peaks-logo.svg",
             "location" : {
                 "state" : "Indiana",
                 "state-short" : "IN",
@@ -33,7 +37,7 @@
                 "long" : "-86.50665478920111"
             },
             "links" : {
-                "mail-url" : "https://www.paolipeaks.com/",
+                "main-url" : "https://www.paolipeaks.com/",
                 "conditions-url" : "https://www.paolipeaks.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
                 "map-url" : "https://goo.gl/maps/aA5bWk8ppQsCMBBK9"
             },
@@ -46,7 +50,9 @@
         },
         {
             "id" : "3",
+            "text-id" : "ober-gatlinburg",
             "name" : "Ober Gatlinburg Ski Area",
+            "logo" : "ober-gatlinburg-logo.png",
             "location" : {
                 "state" : "Tennessee",
                 "state-short" : "TN",
@@ -55,7 +61,7 @@
                 "long" : "-83.558261402745"
             },
             "links" : {
-                "url" : "https://obergatlinburg.com/",
+                "main-url" : "https://obergatlinburg.com/",
                 "conditions-url" : "https://obergatlinburg.com/slope-report/",
                 "map-url" : "https://goo.gl/maps/AoGpKQNmymV4kWVy9"
             },
@@ -68,7 +74,9 @@
         },
         {
             "id" : "4",
+            "text-id" : "winterplace",
             "name" : "Winterplace Ski Resort",
+            "logo" : "winterplace-logo.png",
             "location" : {
                 "state" : "West Virginia",
                 "state-short" : "WV",
@@ -77,7 +85,7 @@
                 "long" : "-81.11997013343228"
             },
             "links" : {
-                "url" : "https://www.winterplace.com/",
+                "main-url" : "https://www.winterplace.com/",
                 "conditions-url" : "https://www.winterplace.com/snow-report",
                 "map-url" : "https://goo.gl/maps/zCT2Ns2rjFdxHYfg6"
             },
@@ -90,7 +98,9 @@
         },
         {
             "id" : "5",
+            "text-id" : "snowshoe",
             "name" : "Snowshoe Mountain",
+            "logo" : "snowshoe-logo.png",
             "location" : {
                 "state" : "West Virginia",
                 "state-short" : "WV",
@@ -112,7 +122,9 @@
         },
         {
             "id" : "6",
+            "text-id" : "canaan-valley",
             "name" : "Canaan Valley Resort",
+            "logo" : "canaan-valley-logo.png",
             "location" : {
                 "state" : "West Virginia",
                 "state-short" : "WV",
@@ -121,7 +133,7 @@
                 "long" : "-79.46477768733696"
             },
             "links" : {
-                "url" : "https://www.canaanresort.com/",
+                "main-url" : "https://www.canaanresort.com/",
                 "conditions-url" : "https://www.canaanresort.com/trail-report/",
                 "map-url" : "https://goo.gl/maps/v8zBhXXSV23cZurv8"
             },
@@ -134,7 +146,9 @@
         },
         {
             "id" : "7",
+            "text-id" : "cataloochee",
             "name" : "Cataloochee Ski Area",
+            "logo" : "cataloochee-logo.png",
             "location" : {
                 "state" : "North Carolina",
                 "state-short" : "NC",
@@ -143,7 +157,7 @@
                 "long" : "-83.09020697394982"
             },
             "links" : {
-                "url" : "https://cataloochee.com/",
+                "main-url" : "https://cataloochee.com/",
                 "conditions-url" : "https://cataloochee.com/the-mountain/snow-report/",
                 "map-url" : "https://goo.gl/maps/eKPzcL1hSrYh2bX96"
             },
@@ -156,7 +170,9 @@
         },
         {
             "id" : "8",
+            "text-id" : "beech-mountain",
             "name" : "Beech Mountain Resort",
+            "logo" : "beech-logo.png",
             "location" : {
                 "state" : "North Carolina",
                 "state-short" : "NC",
@@ -165,7 +181,7 @@
                 "long" : "-81.87989331626032"
             },
             "links" : {
-                "url" : "https://www.beechmountainresort.com/",
+                "main-url" : "https://www.beechmountainresort.com/",
                 "conditions-url" : "https://www.beechmountainresort.com/mountain/winter-trail-map/",
                 "map-url" : "https://goo.gl/maps/AtteeCn4Cz9ZFtjS6"
             },
@@ -178,7 +194,9 @@
         },
         {
             "id" : "9",
+            "text-id" : "sugar-mountain",
             "name" : "Sugar Mountain Resort",
+            "logo" : "sugar-logo.png",
             "location" : {
                 "state" : "North Carolina",
                 "state-short" : "NC",
@@ -187,7 +205,7 @@
                 "long" : "-81.85913763160436"
             },
             "links" : {
-                "url" : "http://www.skisugar.com/",
+                "main-url" : "http://www.skisugar.com/",
                 "conditions-url" : "http://www.skisugar.com/#map",
                 "map-url" : "https://goo.gl/maps/A6KDEiMkBZA47aKt9"
             },

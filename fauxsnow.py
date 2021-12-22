@@ -129,7 +129,11 @@ def forecast_summary():
         forecastData = {
                 'id' : ski_resort['id'],
                 'name' : ski_resort['name'],
-                'state' : ski_resort['location']['state-short'],
+                'state' : ski_resort['location']['state'],
+                'url' : ski_resort['links']['main-url'],
+                'conditions_url' : ski_resort['links']['conditions-url'],
+                'map_url' : ski_resort['links']['map-url'],
+                'logo': ski_resort['logo'],
                 'forecast' : []
             }
 
