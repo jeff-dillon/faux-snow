@@ -10,7 +10,7 @@ def refresh():
 
     """
     resorts = fauxsnow.load_ski_resorts()
-    for ski_resort in resorts['resorts']:
+    for ski_resort in resorts:
         forecast = fauxsnow.load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
         fauxsnow.save_forecast(forecast, ski_resort['id'])
         print('Updated forecast for ', ski_resort['name'])
