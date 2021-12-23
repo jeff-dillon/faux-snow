@@ -1,10 +1,10 @@
 from os import abort
-import config
 import requests
 import json
 import datetime
 import numpy
 import pathlib
+import os
 
 def calc_celcius(Tf) -> float:
     """Return a temperature converted from Fahrenheit to Celcius
@@ -117,8 +117,13 @@ def load_forecast(lat, lon) -> dict:
     lat -- the latitude of the weather forecast coordinates
     long -- the longitude of the weather forecast coordinates
     """
-    url = config.AERISWEATHER_API_URL+lat+','+lon
-    response = requests.request("GET", url, headers=config.AERIS_API_HEADERS)
+    url = "https://aerisweather1.p.rapidapi.com/forecasts/"+lat+','+lon
+    api_key = os.environ.get('API_KEY')
+    header_vals = {
+        'x-rapidapi-host': "aerisweather1.p.rapidapi.com",
+        'x-rapidapi-key': api_key
+    }
+    response = requests.request("GET", url, headers=header_vals)
     data = json.loads(response.text)
     return data
 
