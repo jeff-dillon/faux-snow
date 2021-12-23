@@ -1,3 +1,4 @@
+from os import abort
 import config
 import requests
 import json
@@ -70,8 +71,8 @@ def is_good_conditions(T, rh) -> bool:
     
     return conditions_are_good
 
-def load_ski_resorts() -> dict:
-    """Returns the ski resorts data from a file
+def load_ski_resorts() -> list:
+    """Returns a list of ski resorts
     
     """
     f = open(f'data/ski-resorts.json')
@@ -80,6 +81,21 @@ def load_ski_resorts() -> dict:
     finally:
         f.close()
     return data
+
+def load_ski_resort(text_id) -> dict:
+    """Return forecast data from a file
+    
+    Keyword arguments: 
+    text_id -- the code name of the resort to be returned 
+    """
+    f = open(f'data/ski-resorts.json')
+    try:
+        resort_list = json.load(f)
+    finally:
+        f.close()
+
+    found_value = [resort for resort in resort_list if resort['text_id'] == text_id]
+    return found_value[0]
 
 def load_forecast_file(id) -> dict:
     """Return forecast data from a file
@@ -125,15 +141,16 @@ def forecast_summary():
     
     resorts = load_ski_resorts()
     
-    for ski_resort in resorts['resorts']:
+    for ski_resort in resorts:
         
         forecastData = {
                 'id' : ski_resort['id'],
+                'text_id' : ski_resort['text_id'],
                 'name' : ski_resort['name'],
                 'state' : ski_resort['location']['state'],
-                'url' : ski_resort['links']['main-url'],
-                'conditions_url' : ski_resort['links']['conditions-url'],
-                'map_url' : ski_resort['links']['map-url'],
+                'url' : ski_resort['links']['main_url'],
+                'conditions_url' : ski_resort['links']['conditions_url'],
+                'map_url' : ski_resort['links']['map_url'],
                 'logo': ski_resort['logo'],
                 'forecast' : []
             }
@@ -161,6 +178,33 @@ def forecast_summary():
         forecastSummary.append(forecastData)
 
     return forecastSummary
+
+def resort_forecast(text_id) -> list:
+    """returns a list of forecast summaries for all resorts
+
+    """
+
+    ski_resort = load_ski_resort(text_id)
+    forecast = load_forecast_file(ski_resort['id'])
+    
+    forecastSummary = []
+
+    for period in forecast["response"][0]["periods"]:
+        conditions = ''
+        if period['snowIN'] != 0: 
+            conditions = 'Snow'
+        elif is_good_conditions(period['minTempF'],period['minHumidity']):
+            conditions = 'Faux'
+        forecastSummary.append({
+            'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
+            'minTemp' : period['minTempF'],
+            'maxTemp' : period['maxTempF'],
+            'snowIN' : period['snowIN'],
+            'weather' : period['weather'],
+            'humidity' : period['minHumidity'],
+            'conditions' : conditions
+        })
+    return forecastSummary;
 
 def forecast_date() -> str:
     fname = pathlib.Path('data/forecast-1.json')

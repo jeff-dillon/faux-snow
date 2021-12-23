@@ -4,20 +4,136 @@
 {% block title %} Faux/Snow - Details {% endblock %}
 
 {% block content %}
-<h1>Faux/Snow</h1>
-        <p>Man-made snow forecasts for the Midwest and Mid-Atlantic states.</p>
-        <a href="{{ url_for('welcome') }}">Home</a>
-        <h2>Faux Snow Forecast</h2>
-        <table>
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-3">
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <!-- <img src="{{ url_for('static', filename='perfect-north-logo.png') }}" class="card-img-top" alt="{{ski_resort.name}}"> -->
+        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+        <div class="card-body">
+            
+            <h5 class="link-info">
+                <a target="new" href="{{ski_resort.url}}"><img src="{{ url_for('static', filename=ski_resort.logo) }}" width="40" alt="{{ski_resort.name}}"></a>
+                {{ski_resort.name}} - Forecast Details 
+            </h5>
+          <hr class="dotted"></hr>
+          <div class="table-responsive">
+          <table class="table table-responsive" width="100%">
             <tr>
-                <th>ID</th>
-                <th>State</th>
-                <th>Resort</th>
+                <th class="text-center" width="12.5%">&nbsp;</th>
+                {% for day in forecast %}
+                    <th  width="12.5%" class="link-secondary text-center">{{ day.date }}</th>
+                {% endfor %}
             </tr>
             <tr>
-                <td>{{ski_resort.id}}</td>
-                <td>{{ski_resort.state}}</td>
-                <td>{{ski_resort.name}}</td>
+                <th width="12.5%" scope="row">Snow Forecast</th>
+                {% for day in forecast %}
+                    <td class="text-center" width="12.5%">
+                        {% if day.conditions == 'Faux' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-thermometer-snow" viewBox="0 0 16 16">
+                        <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585A1.5 1.5 0 0 1 5 12.5z"/>
+                        <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1.293l.646-.647a.5.5 0 0 1 .708.708L9 5.207v1.927l1.669-.963.495-1.85a.5.5 0 1 1 .966.26l-.237.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.884.237a.5.5 0 1 1-.26.966l-1.848-.495L9.5 8l1.669.963 1.849-.495a.5.5 0 1 1 .258.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.237.883a.5.5 0 1 1-.966.258L10.67 9.83 9 8.866v1.927l1.354 1.353a.5.5 0 0 1-.708.708L9 12.207V13.5a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5z"/>
+                      </svg></br><small>Faux Snow</small>
+                    {% elif day.conditions == 'Snow' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-snow3" viewBox="0 0 16 16">
+                        <path d="M8 7.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1z"/>
+                        <path d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.51l-2.053-1.232-1.348.778-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.883-.237a.5.5 0 1 1 .258-.966l1.85.495L5 9.155v-2.31l-1.4-.808-1.85.495a.5.5 0 1 1-.259-.966l.884-.237-1.12-.646a.5.5 0 0 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849 1.348.778L7.5 4.717v-1.51L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.51l2.053 1.232 1.348-.778.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-1.4.808v2.31l1.4.808 1.849-.495a.5.5 0 1 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-1.348-.778L8.5 11.283v1.51l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5zm2-6.783V6.783l-2-1.2-2 1.2v2.434l2 1.2 2-1.2z"/>
+                      </svg></br><small>Real Snow</small>
+                    {% else %}
+                        &nbsp;
+                    {% endif %}
+                    </td>
+                {% endfor %}
             </tr>
-        </table>
+            <tr>
+                <th width="12.5%" scope="row">Accumulation</th>
+                {% for day in forecast %}
+                    <td class="text-center" width="12.5%"><small>{{day.snowIN}}"</small></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th width="12.5%" scope="row">Weather</th>
+                {% for day in forecast %}
+                    <td class="text-center" width="12.5%"><small>{{day.weather}}</small></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th width="12.5%" scope="row">Temp (low/high)</th>
+                {% for day in forecast %}
+                    <td class="text-center" width="12.5%"><small>{{day.minTemp}} / {{day.maxTemp}}</small></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th width="12.5%" scope="row">Relative Humidity</th>
+                {% for day in forecast %}
+                    <td class="text-center" width="12.5%"><small>{{day.humidity}}%</small></td>
+                {% endfor %}
+            </tr>
+            </table>
+        </div>
+            <p></p>
+          <div class="d-flex justify-content-between align-items-center">
+              <!--
+            <div class="btn-group">
+              <a href="{{ url_for('detail', text_id=ski_resort.text_id) }}" class="btn btn-sm btn-outline-secondary">Detailed Forecast</a>
+              <a target="new" href="{{ ski_resort.conditions_url }}" class="btn btn-sm btn-outline-secondary">Resort Conditions</a>
+              <a target="new" href="{{ ski_resort.map_url }}" class="btn btn-sm btn-outline-secondary">Map</a>
+            </div>
+            -->
+            <small class="text-muted">Last updated: {{forecast_date}}</small>
+          </div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <!-- <img src="{{ url_for('static', filename='perfect-north-logo.png') }}" class="card-img-top" alt="{{ski_resort.name}}"> -->
+          <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+  
+          <div class="card-body">
+              
+              <h5 class="link-info">
+                  <a target="new" href="{{ski_resort.url}}"><img src="{{ url_for('static', filename=ski_resort.logo) }}" width="40" alt="{{ski_resort.name}}"></a>
+                  {{ski_resort.name}} - Resort Details
+              </h5>
+            <hr class="dotted"></hr>
+              <table cellpadding="6" cellspacing="6">
+                  <tr>
+                      <th scope="row">Skiable Terrain (acres)</td>
+                      <td>{{ski_resort.stats.acres}}</td>
+                  </tr>
+                  <tr>
+                      <th scope="row"># Trail</td>
+                      <td>{{ski_resort.stats.trails}}</td>
+                  </tr>
+                  <tr>
+                      <th scope="row"># Lifts</td>
+                      <td>{{ski_resort.stats.lifts}}</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Vertical Drop (feet)</td>
+                      <td>{{ski_resort.stats.vertical}}</td>
+                  </tr>
+                  <tr>
+                      <th  scope="row" valign="top">Links</td>
+                      <td>
+                          <a href="{{ski_resort.links.main_url}}">Resort Website</a></br>
+                          <a href="{{ski_resort.links.conditions_url}}">Resort Conditions</a></br>
+                          <a href="{{ski_resort.links.map_url}}">Google Maps</a></td>
+                      </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Address</td>
+                    <td>{{ski_resort.location.address}}</td>
+                </tr>
+              </table>
+              <p></p>
+          </div>
+        </div>
+
+        
+    </div>
 {% endblock %}

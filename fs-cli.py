@@ -28,7 +28,7 @@ def forecast():
         table.add_column(day['date'], justify="center", style="cyan", no_wrap=True)
 
     for resort in fs:
-        table.add_row(resort['id'], 
+        table.add_row(resort['text_id'], 
             "(" + resort['state'] + ") " + resort['name'], 
             resort['forecast'][0]['conditions'],
             resort['forecast'][1]['conditions'],
@@ -52,12 +52,12 @@ def detail(resort_id):
     """
     resorts = fauxsnow.load_ski_resorts()
     match = 0
-    for ski_resort in resorts['resorts']:
-        if str(ski_resort['id']) == str(resort_id):
+    for ski_resort in resorts:
+        if str(ski_resort['text_id']) == str(resort_id):
             resort_table = Table(title="Ski Resort Details")
             resort_table.add_column(ski_resort['name'], justify="left", style="cyan", no_wrap=True)
             resort_table.add_column(ski_resort['location']['address'], justify="left", style="cyan", no_wrap=True)
-            resort_table.add_row("Links", ski_resort['links']['conditions-url'])
+            resort_table.add_row("Links", ski_resort['links']['conditions_url'])
             resort_table.add_row("Skiable Terrain", ski_resort['stats']['acres'] + " acres")
             resort_table.add_row("# Lifts", ski_resort['stats']['lifts'])
             resort_table.add_row("# Trails", ski_resort['stats']['trails'])
@@ -77,7 +77,7 @@ def detail(resort_id):
 
             fs = fauxsnow.forecast_summary()
             for resort in fs:
-                if resort['id'] == str(resort_id):
+                if resort['text_id'] == str(resort_id):
                     for day in resort['forecast']:
                         forecast_table.add_row(
                             day['date'],
@@ -101,7 +101,7 @@ def main():
     parser.add_argument('--refresh',  action = 'store_true', help='Refresh the forecast data')
     parser.add_argument('--forecast',  action = 'store_true', help='Display the forecast data')
     parser.add_argument('--detail',  action = 'store_true', help='Display the resort details')
-    parser.add_argument('id', type=int, nargs = '?', help='ID of the resort to display')
+    parser.add_argument('id', type=str, nargs = '?', help='ID of the resort to display')
     args = parser.parse_args()
 
     if args.refresh:

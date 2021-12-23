@@ -16,19 +16,19 @@
             
             <h5 class="link-info">
                 <a target="new" href="{{ski_resort.url}}"><img src="{{ url_for('static', filename=ski_resort.logo) }}" width="40" alt="{{ski_resort.name}}"></a>
-                {{ski_resort.name}} - {{ski_resort.state}}
+                <a href="{{ url_for('detail', text_id=ski_resort.text_id) }}" class="link-info">{{ski_resort.name}} - {{ski_resort.state}}</a>
             </h5>
           <hr class="dotted"></hr>
-          <table class="table table-sm table-responsive" width="100%">
+          <table class="table table-responsive" width="100%">
             <tr>
                 {% for day in ski_resort.forecast %}
-                    <th class="link-secondary">{{ day.date }}</th>
+                    <th class="link-secondary text-center" width="14%">{{ day.date }}</th>
                 {% endfor %}
             </tr>
             
             <tr>
               {% for i in range(0,6) %}
-                <td>
+                <td class="text-center" width="14%">
                     {% if ski_resort.forecast[i].conditions == 'Faux' %}
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-thermometer-snow" viewBox="0 0 16 16">
                         <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585A1.5 1.5 0 0 1 5 12.5z"/>
@@ -48,12 +48,14 @@
         </table>
         
           <div class="d-flex justify-content-between align-items-center">
+             
             <div class="btn-group">
-                
-              <a href="{{ url_for('detail', index=ski_resort.id) }}" class="btn btn-sm btn-outline-secondary">Detailed Forecast</a>
+               
+              <a href="{{ url_for('detail', text_id=ski_resort.text_id) }}" class="btn btn-sm btn-outline-secondary">Detailed Forecast</a>
               <a target="new" href="{{ ski_resort.conditions_url }}" class="btn btn-sm btn-outline-secondary">Resort Conditions</a>
               <a target="new" href="{{ ski_resort.map_url }}" class="btn btn-sm btn-outline-secondary">Map</a>
             </div>
+            
             <small class="text-muted">Last updated: {{forecast_date}}</small>
           </div>
         </div>
