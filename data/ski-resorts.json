@@ -214,5 +214,53 @@
             "lifts" : "6",
             "vertical" : "1200"
         }
+    },
+    {
+        "id" : "10",
+        "text_id" : "wolf-ridge",
+        "name" : "Wolf Ridge Ski Resort",
+        "logo" : "wolf-ridge-logo.png",
+        "location" : {
+            "state" : "North Carolina",
+            "state_short" : "NC",
+            "address" : "578 Valley View Circle Mars Hill, NC 28754",
+            "lat" : "36.02153540770578",
+            "long" : "-82.48665163158509"
+        },
+        "links" : {
+            "main_url" : "https://skiwolfridgenc.com/",
+            "conditions_url" : "https://skiwolfridgenc.com/the-mountain/snow-report",
+            "map_url" : "https://goo.gl/maps/VP2U6nfb4DYPiyvZ8"
+        },
+        "stats" : {
+            "acres" : "82",
+            "trails" : "15",
+            "lifts" : "5",
+            "vertical" : "700"
+        }
+    },
+    {
+        "id" : "11",
+        "text_id" : "appalachian",
+        "name" : "Appalachian Ski Mountain",
+        "logo" : "appalachian-logo.png",
+        "location" : {
+            "state" : "North Carolina",
+            "state_short" : "NC",
+            "address" : "940 Ski Mountain Rd, Blowing Rock, NC 28605",
+            "lat" : "36.261083704021296",
+            "long" : "-81.65169068999924"
+        },
+        "links" : {
+            "main_url" : "https://appskimtn.com/",
+            "conditions_url" : "https://appskimtn.com/slope-report",
+            "map_url" : "https://goo.gl/maps/CoG246CZjtYHnqzT7"
+        },
+        "stats" : {
+            "acres" : "82",
+            "trails" : "12",
+            "lifts" : "3",
+            "vertical" : "365"
+        }
     }
 ]
