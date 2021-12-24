@@ -1,0 +1,750 @@
+[
+    {
+        "text_id": "perfect-north-slopes",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 57,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "humidity": 68,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 40,
+                "maxTemp": 66,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers and Isolated Storms",
+                "humidity": 68,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 44,
+                "maxTemp": 53,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 58,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 41,
+                "maxTemp": 64,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 67,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 49,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers",
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 39,
+                "maxTemp": 64,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "humidity": 73,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 35,
+                "maxTemp": 51,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 65,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "paoli-peaks",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 59,
+                "maxTemp": 63,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Slight Chance of Drizzle",
+                "humidity": 78,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 41,
+                "maxTemp": 69,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 71,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 48,
+                "maxTemp": 56,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 66,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 43,
+                "maxTemp": 65,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 51,
+                "maxTemp": 62,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers",
+                "humidity": 86,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 38,
+                "maxTemp": 64,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "humidity": 81,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 35,
+                "maxTemp": 49,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 73,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "ober-gatlinburg",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 49,
+                "maxTemp": 61,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 42,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 52,
+                "maxTemp": 66,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "humidity": 65,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 49,
+                "maxTemp": 64,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "humidity": 56,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 54,
+                "maxTemp": 65,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 69,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 55,
+                "maxTemp": 67,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 64,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 55,
+                "maxTemp": 67,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers Likely",
+                "humidity": 69,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 50,
+                "maxTemp": 62,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Showers",
+                "humidity": 79,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "winterplace",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 45,
+                "maxTemp": 53,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 51,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 47,
+                "maxTemp": 57,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 79,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 39,
+                "maxTemp": 53,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Isolated Showers",
+                "humidity": 62,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 45,
+                "maxTemp": 56,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 84,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 50,
+                "maxTemp": 57,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 76,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 50,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers Likely",
+                "humidity": 78,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 43,
+                "maxTemp": 54,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Showers Likely",
+                "humidity": 80,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "snowshoe",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 40,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 68,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 40,
+                "maxTemp": 51,
+                "snowIN": 0,
+                "weather": "Windy with Rain Showers Likely",
+                "humidity": 91,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 34,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Isolated Showers",
+                "humidity": 65,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 40,
+                "maxTemp": 47,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Rain Likely",
+                "humidity": 89,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 45,
+                "maxTemp": 48,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 77,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 46,
+                "maxTemp": 52,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers Likely",
+                "humidity": 88,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 40,
+                "maxTemp": 49,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Light Showers Likely",
+                "humidity": 79,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "canaan-valley",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 43,
+                "maxTemp": 49,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 67,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 39,
+                "maxTemp": 54,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 94,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 32,
+                "maxTemp": 46,
+                "snowIN": 0.1,
+                "weather": "Partly Cloudy",
+                "humidity": 69,
+                "conditions": "Snow"
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 42,
+                "maxTemp": 49,
+                "snowIN": 0.11,
+                "weather": "Mostly Cloudy with Wintry Mix",
+                "humidity": 89,
+                "conditions": "Snow"
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 46,
+                "maxTemp": 53,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Showers Likely",
+                "humidity": 83,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 41,
+                "maxTemp": 56,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Showers",
+                "humidity": 86,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 37,
+                "maxTemp": 49,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 79,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "cataloochee",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 43,
+                "maxTemp": 53,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 41,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 48,
+                "maxTemp": 57,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 45,
+                "maxTemp": 57,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "humidity": 53,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 49,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 73,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 51,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 69,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 53,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Showers Likely",
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 49,
+                "maxTemp": 56,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Showers Likely",
+                "humidity": 80,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "beech-mountain",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 43,
+                "maxTemp": 51,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 37,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 45,
+                "maxTemp": 54,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Light Rain Showers",
+                "humidity": 82,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 39,
+                "maxTemp": 51,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Isolated Showers",
+                "humidity": 60,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 47,
+                "maxTemp": 54,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 80,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 47,
+                "maxTemp": 56,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Isolated Showers",
+                "humidity": 76,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 49,
+                "maxTemp": 57,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 79,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 48,
+                "maxTemp": 53,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers Likely",
+                "humidity": 85,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "sugar-mountain",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 44,
+                "maxTemp": 54,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 36,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 47,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 74,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 40,
+                "maxTemp": 55,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Isolated Showers",
+                "humidity": 60,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 48,
+                "maxTemp": 58,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 74,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 48,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Isolated Showers",
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 51,
+                "maxTemp": 61,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 76,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 48,
+                "maxTemp": 57,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Showers Likely",
+                "humidity": 81,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "wolf-ridge",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 45,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 35,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 51,
+                "maxTemp": 65,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "humidity": 72,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 46,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Light Rain Showers",
+                "humidity": 63,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 51,
+                "maxTemp": 63,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 74,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 52,
+                "maxTemp": 65,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Scattered Showers",
+                "humidity": 70,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 55,
+                "maxTemp": 65,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Showers Likely",
+                "humidity": 74,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 49,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Showers Likely",
+                "humidity": 82,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "appalachian",
+        "periods": [
+            {
+                "date": "24-Dec",
+                "minTemp": 44,
+                "maxTemp": 56,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 34,
+                "conditions": ""
+            },
+            {
+                "date": "25-Dec",
+                "minTemp": 48,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 66,
+                "conditions": ""
+            },
+            {
+                "date": "26-Dec",
+                "minTemp": 41,
+                "maxTemp": 58,
+                "snowIN": 0,
+                "weather": "Partly Cloudy with Isolated Showers",
+                "humidity": 50,
+                "conditions": ""
+            },
+            {
+                "date": "27-Dec",
+                "minTemp": 48,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "humidity": 64,
+                "conditions": ""
+            },
+            {
+                "date": "28-Dec",
+                "minTemp": 50,
+                "maxTemp": 61,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Isolated Showers",
+                "humidity": 66,
+                "conditions": ""
+            },
+            {
+                "date": "29-Dec",
+                "minTemp": 50,
+                "maxTemp": 63,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Scattered Showers",
+                "humidity": 67,
+                "conditions": ""
+            },
+            {
+                "date": "30-Dec",
+                "minTemp": 48,
+                "maxTemp": 58,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy with Light Showers Likely",
+                "humidity": 75,
+                "conditions": ""
+            }
+        ]
+    }
+]

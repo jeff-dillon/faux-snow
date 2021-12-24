@@ -97,19 +97,6 @@ def load_ski_resort(text_id) -> dict:
     found_value = [resort for resort in resort_list if resort['text_id'] == text_id]
     return found_value[0]
 
-def load_forecast_file(id) -> dict:
-    """Return forecast data from a file
-    
-    Keyword arguments: 
-    id -- the resort_id to determine which forecast file to pull 
-    """
-    f = open(f'data/forecast-{id}.json')
-    try:
-        data = json.load(f)
-    finally:
-        f.close()
-    return data
-
 def load_forecast(lat, lon) -> dict:
     """Return weather foreacast for a given lat/long coordinate
     
@@ -127,41 +114,32 @@ def load_forecast(lat, lon) -> dict:
     data = json.loads(response.text)
     return data
 
-def save_forecast(f, id):
+def save_forecasts(forecasts):
     """save the weather forecast json to a text file
     
     Keyword arguments: 
     f -- the forecast data
     id -- the is of the ski resort
     """
-    with open(f'data/forecast-{id}.json', 'w') as outfile:
-        json.dump(f, outfile, indent=4)
+    with open(f'data/forecasts.json', 'w') as outfile:
+        json.dump(forecasts, outfile, indent=4)
 
-def forecast_summary():
-    """returns a list of forecast summaries for all resorts
-
+def load_forecasts_from_api(resorts) -> list:
+    """load the weather forecast json to a list of dict objects
+    
+    Keyword arguments: 
+    resorts -- a list of resort dict objects
     """
-    
-    forecastSummary = []
-    
-    resorts = load_ski_resorts()
-    
+    forecasts = []
     for ski_resort in resorts:
+        forecast = load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
         
-        forecastData = {
-                'id' : ski_resort['id'],
-                'text_id' : ski_resort['text_id'],
-                'name' : ski_resort['name'],
-                'state' : ski_resort['location']['state'],
-                'url' : ski_resort['links']['main_url'],
-                'conditions_url' : ski_resort['links']['conditions_url'],
-                'map_url' : ski_resort['links']['map_url'],
-                'logo': ski_resort['logo'],
-                'forecast' : []
-            }
 
-        forecast = load_forecast_file(ski_resort['id'])
-        
+        forecastsdata = {
+            "text_id" : ski_resort["text_id"],
+            "periods" : []
+        }
+
         for period in forecast['response'][0]['periods']:
             
             conditions = ''
@@ -170,7 +148,7 @@ def forecast_summary():
             elif is_good_conditions(period['minTempF'],period['minHumidity']):
                 conditions = 'Faux'
             
-            forecastData['forecast'].append({
+            forecastsdata['periods'].append({
                 'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
                 'minTemp' : period['minTempF'],
                 'maxTemp' : period['maxTempF'],
@@ -179,40 +157,45 @@ def forecast_summary():
                 'humidity' : period['minHumidity'],
                 'conditions' : conditions
             })
-
-        forecastSummary.append(forecastData)
-
-    return forecastSummary
-
-def resort_forecast(text_id) -> list:
-    """returns a list of forecast summaries for all resorts
-
-    """
-
-    ski_resort = load_ski_resort(text_id)
-    forecast = load_forecast_file(ski_resort['id'])
+        forecasts.append(forecastsdata)
     
-    forecastSummary = []
+    return forecasts
 
-    for period in forecast["response"][0]["periods"]:
-        conditions = ''
-        if period['snowIN'] != 0: 
-            conditions = 'Snow'
-        elif is_good_conditions(period['minTempF'],period['minHumidity']):
-            conditions = 'Faux'
-        forecastSummary.append({
-            'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
-            'minTemp' : period['minTempF'],
-            'maxTemp' : period['maxTempF'],
-            'snowIN' : period['snowIN'],
-            'weather' : period['weather'],
-            'humidity' : period['minHumidity'],
-            'conditions' : conditions
-        })
-    return forecastSummary;
+def load_forecasts_from_file() -> list:
+    """Return forecast data from a file
+    """
+    f = open(f'data/forecasts.json')
+    try:
+        data = json.load(f)
+    finally:
+        f.close()
+    return data
+
+def combine_resorts_forecasts(resorts, forecasts) -> list:
+    combined = []
+    for resort in resorts:
+        for forecast in forecasts:
+            if forecast['text_id'] == resort['text_id']:
+                combined.append({
+                    "text_id" : resort['text_id'],
+                    "resort" : resort,
+                    "forecast" : forecast
+                })
+    return combined
+
+def combine_resort_forecast(resorts, forecasts, resort_id) -> dict:
+    combined = {}
+    for resort in resorts:
+        if resort['text_id'] == resort_id:
+            for forecast in forecasts:
+                if forecast['text_id'] == resort_id:
+                    combined["text_id"] = resort['text_id']
+                    combined["resort"] = resort
+                    combined["forecast"] = forecast
+    return combined
 
 def forecast_date() -> str:
-    fname = pathlib.Path('data/forecast-1.json')
+    fname = pathlib.Path('data/forecasts.json')
     if fname.exists():
         mtime = datetime.datetime.fromtimestamp(fname.stat().st_mtime)
         return str(mtime.strftime('%a, %d %b @ %I:%M %p ET'))

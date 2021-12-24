@@ -4,39 +4,42 @@ from rich.console import Console
 from rich.table import Table
 import argparse
 
-
 def refresh():
     """get the weather forecast from the weather API for each ski resort and save it to file
 
     """
     resorts = fauxsnow.load_ski_resorts()
-    for ski_resort in resorts:
-        forecast = fauxsnow.load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
-        fauxsnow.save_forecast(forecast, ski_resort['id'])
-        print('Updated forecast for ', ski_resort['name'])
+    forecasts = fauxsnow.load_forecasts_from_api(resorts)
+    fauxsnow.save_forecasts(forecasts)
+    print('Updated forecasts')
 
 def forecast():
     """read the ski resorts and weather forecasts from file and print a summary to the screen
 
     """
-    fs = fauxsnow.forecast_summary()
+    forecasts = fauxsnow.load_forecasts_from_file()
+    resorts = fauxsnow.load_ski_resorts()
 
     table = Table(title="Faux-Snow Forecast")
     table.add_column("ID", justify="left", style="cyan", no_wrap=True)
     table.add_column("Resort", justify="left", style="cyan", no_wrap=True)
-    for day in fs[0]['forecast']:
+    for day in forecasts[0]['periods']:
         table.add_column(day['date'], justify="center", style="cyan", no_wrap=True)
 
-    for resort in fs:
+    for resort in resorts:
+        periods = []
+        for forecast in forecasts:
+            if forecast['text_id'] == resort['text_id']:
+                periods = forecast['periods']
         table.add_row(resort['text_id'], 
-            "(" + resort['state'] + ") " + resort['name'], 
-            resort['forecast'][0]['conditions'],
-            resort['forecast'][1]['conditions'],
-            resort['forecast'][2]['conditions'],
-            resort['forecast'][3]['conditions'],
-            resort['forecast'][4]['conditions'],
-            resort['forecast'][5]['conditions'],
-            resort['forecast'][6]['conditions'],
+            "(" + resort['location']['state'] + ") " + resort['name'], 
+            periods[0]['conditions'],
+            periods[1]['conditions'],
+            periods[2]['conditions'],
+            periods[3]['conditions'],
+            periods[4]['conditions'],
+            periods[5]['conditions'],
+            periods[6]['conditions'],
         )
 
     console = Console()
@@ -51,6 +54,7 @@ def detail(resort_id):
     resort_id -- the id of the ski resort
     """
     resorts = fauxsnow.load_ski_resorts()
+    forecasts = fauxsnow.load_forecasts_from_file()
     match = 0
     for ski_resort in resorts:
         if str(ski_resort['text_id']) == str(resort_id):
@@ -75,18 +79,17 @@ def detail(resort_id):
             forecast_table.add_column("Humidity", justify="left", style="cyan", no_wrap=True)
             forecast_table.add_column("Snow (IN)", justify="left", style="cyan", no_wrap=True)
 
-            fs = fauxsnow.forecast_summary()
-            for resort in fs:
-                if resort['text_id'] == str(resort_id):
-                    for day in resort['forecast']:
+            for forecast in forecasts:
+                if forecast['text_id'] == str(resort_id):
+                    for period in forecast['periods']:
                         forecast_table.add_row(
-                            day['date'],
-                            day['conditions'],
-                            day['weather'],
-                            str(day['minTemp']),
-                            str(day['maxTemp']),
-                            str(day['humidity']),
-                            str(day['snowIN'])
+                            period['date'],
+                            period['conditions'],
+                            period['weather'],
+                            str(period['minTemp']),
+                            str(period['maxTemp']),
+                            str(period['humidity']),
+                            str(period['snowIN'])
                         )
 
             console.print(forecast_table)

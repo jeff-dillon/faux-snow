@@ -7,19 +7,15 @@ view_count = 0
 
 @app.route("/")
 def welcome():
-    summary = fauxsnow.forecast_summary()
     return render_template("welcome.html", 
-        ski_resorts=summary, 
+        combined=fauxsnow.combine_resorts_forecasts(fauxsnow.load_ski_resorts(), fauxsnow.load_forecasts_from_file()),
         forecast_date=fauxsnow.forecast_date())
 
 @app.route("/detail/<text_id>")
 def detail(text_id):
     try:
-        ski_resort = fauxsnow.load_ski_resort(text_id)
-        print(ski_resort)
         return render_template("detail.html", 
-            ski_resort=ski_resort, 
-            forecast_date=fauxsnow.forecast_date(), 
-            forecast=fauxsnow.resort_forecast(text_id))
+            combined=fauxsnow.combine_resort_forecast(fauxsnow.load_ski_resorts(), fauxsnow.load_forecasts_from_file(), text_id), 
+            forecast_date=fauxsnow.forecast_date())
     except IndexError:
         abort(404)
