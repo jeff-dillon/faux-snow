@@ -1,8 +1,15 @@
-# faux/snow
+# What is faux-snow?
+
+faux-snow is a hobby project / web app that predicts good conditions for man-made snow at ski resorts in IN, WV, NC, and TN. 
+
+Visit the site here: [Faux-Snow](https://faux-snow-sedzl.ondigitalocean.app/).
+
+
+## Why was this built?
 
 After moving from Colorado to Kentucky I'm looking for some snowboarding options that don't involve a plane ride. In Colorado, ski plans are generally based on natural snowfall totals. The deeper the fresh powder, the better your day will be. There are great sites available that track snow totals and help you make plans - shoutout to [opensnow.com](https://opensnow.com).
 
-In Kentkucy, the nearest ski resorts are in Indiana, West Virginia, Tennessee, and North Carolina. fresh snow is less frequent  with less total accumulation in these states. Snow forecasts are therefore less helpful in finding the best conditions. Rather than tracking snowfall, it makes more sense to track the optimal conditions for man-made snow. 
+In Kentkucy, the nearest ski resorts are in Indiana, West Virginia, Tennessee, and North Carolina. fresh snow is less frequent with less total accumulation which makes snow forecasts less helpful in finding the good (enough) conditions. Instead of tracking snowfall, it makes more sense to track the optimal conditions for man-made snow. 
 
 This app will help find the best man-made powder conditions in the South and Midwest.
 ## What makes for good faux snow?
@@ -64,18 +71,18 @@ horizontal axis
 
 ## What is this? An app for nerds?
 
-So what does all of this weather-math mean to me? This app will pull 7-day forecasts for ski resorts in the midwest and mid-atlantic and show you the best days for skiing based on the snow-making conditions. All the nerdy weather-math will be hidden behiind the scenes.
+So what does all of this weather-math mean to me? This app will pull 7-day forecasts for ski resorts in the midwest and mid-atlantic and show you the best days for skiing based on the snow-making conditions. All the nerdy weather-math is hidden behiind the scenes.
+
 ## How do I use it?
 
-The current version of this app is a Command Line Interface (CLI) app. 
+faux-snow has two implementations: a command line interface app (CLI) and a web app. 
 
-!['I can code. Yay!'](images/i-can-code-yay.jpg)
+### Command Line Interface
 
-To use this you will need an environment on your computer that can run Python apps, an API key, and some basic text editing skillz. I know, not very useful right now. Eventually this will be a web app. That will make this actually useful. For now, follow these steps:
-
+To use the command line app you will need an environment on your computer that can run Python apps, an API key, and some basic text editing skillz. Follow these steps:
 
 1. Get an account and API key from [AerisWeather](https://rapidapi.com/aerisweather-aerisweather/api/aerisweather1/).
-1. Store the AERIS_API_HEADERS and  AERISWEATHER_API_URL in a file called config.py in the root folder of the app. 
+1. Store the AERIS_API_HEADERS and  AERISWEATHER_API_URL in an environment variable called API_KEY. 
 1. Install the python modules as needed (numpy, rich, argparse) .
 1. Execute the fs-cli.py script using the following commands:
 
@@ -86,19 +93,23 @@ To use this you will need an environment on your computer that can run Python ap
 | Show Resort Details | fs-cli.py --details resort_id |
 | Show Help | fs-cli.py --help |
 
-## Sample CLI Forecast
+#### Sample CLI Forecast
 
 ![forecast screenshot](images/forecast.png)
 
-## Sample Web Forecast
-
-![forecast screenshot](images/web-forecast.png)
-
-## Sample CLI Resort Details
+#### Sample CLI Resort Details
 
 ![details screenshot](images/details.png)
 
-## Sample Web Resort Details
+### Web App
+
+The web app runs on gunicorn and was built with flask and bootstrap.
+
+#### Sample Web Forecast
+
+![forecast screenshot](images/web-forecast.png)
+
+#### Sample Web Resort Details
 
 ![details screenshot](images/web-details1.png)
 
