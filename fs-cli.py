@@ -10,8 +10,12 @@ def refresh():
     """
     resorts = fauxsnow.load_ski_resorts()
     forecasts = fauxsnow.load_forecasts_from_api(resorts)
-    fauxsnow.save_forecasts(forecasts)
-    print('Updated forecasts')
+    # if the api call returns None, fail gracefully.
+    if forecasts:
+        fauxsnow.save_forecasts(forecasts)
+        print('Updated forecasts')
+    else:
+        print('could not update forecasts')
 
 def forecast():
     """read the ski resorts and weather forecasts from file and print a summary to the screen

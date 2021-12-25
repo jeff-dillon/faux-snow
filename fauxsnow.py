@@ -5,6 +5,7 @@ import datetime
 import numpy
 import pathlib
 import os
+import re
 
 def calc_celcius(Tf) -> float:
     """Return a temperature converted from Fahrenheit to Celcius
@@ -104,7 +105,7 @@ def load_forecast(lat, lon) -> dict:
     lat -- the latitude of the weather forecast coordinates
     long -- the longitude of the weather forecast coordinates
     """
-    url = "https://aerisweather1.p.rapidapi.com/forecasts/"+lat+','+lon
+    url = "https://aerisweather1.p.rapidapi.com/forecasts/"+lat+','+lon+'?fields=periods.maxTempF,periods.minTempF,periods.snowIN,periods.minHumidity,periods.weatherPrimary,periods.validTime,periods.weatherPrimaryCoded'
     api_key = os.environ.get('API_KEY')
     header_vals = {
         'x-rapidapi-host': "aerisweather1.p.rapidapi.com",
@@ -125,7 +126,7 @@ def save_forecasts(forecasts):
         json.dump(forecasts, outfile, indent=4)
 
 def load_forecasts_from_api(resorts) -> list:
-    """load the weather forecast json to a list of dict objects
+    """load the weather forecast json to a list of dict objects. Returns None if we have reached the api call limit
     
     Keyword arguments: 
     resorts -- a list of resort dict objects
@@ -133,31 +134,48 @@ def load_forecasts_from_api(resorts) -> list:
     forecasts = []
     for ski_resort in resorts:
         forecast = load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
-        
+        response = forecast.get('response')
 
-        forecastsdata = {
-            "text_id" : ski_resort["text_id"],
-            "periods" : []
-        }
+        # if the api call doesn't return a response value, exit the function and return None
+        if response:
 
-        for period in forecast['response'][0]['periods']:
-            
-            conditions = ''
-            if period['snowIN'] != 0: 
-                conditions = 'Snow'
-            elif is_good_conditions(period['minTempF'],period['minHumidity']):
-                conditions = 'Faux'
-            
-            forecastsdata['periods'].append({
-                'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
-                'minTemp' : period['minTempF'],
-                'maxTemp' : period['maxTempF'],
-                'snowIN' : period['snowIN'],
-                'weather' : period['weather'],
-                'humidity' : period['minHumidity'],
-                'conditions' : conditions
-            })
-        forecasts.append(forecastsdata)
+            forecastsdata = {
+                "text_id" : ski_resort["text_id"],
+                "forecast_date" : str(datetime.datetime.now().strftime("%d/%m/%Y %I:%M %p")),
+                "periods" : []
+            }
+
+            for period in forecast['response'][0]['periods']:
+
+                match = re.search(r':[A-Z]+$',period['weatherPrimaryCoded'])
+
+                conditions = ''
+                if match:
+                    print('Raw = ',period['weatherPrimaryCoded'],'; Code = ', match.group())
+                    if match.group() in [':BS',':S',':SW',':WM']: # check for Blowing Snow, Snow, Snow Showers, or Wintry Mix
+                        conditions = 'Snow'
+                    elif is_good_conditions(period['minTempF'],period['minHumidity']) and match in [':CL',':FW',':SC',':BK',':OV']: # check for a cloud code - indicates absence of non-snow weather (ice, rain, etc.)
+                        conditions = 'Faux'
+                else:
+                    print('no match')
+                
+                
+
+                
+                
+                forecastsdata['periods'].append({
+                    'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
+                    'minTemp' : period['minTempF'],
+                    'maxTemp' : period['maxTempF'],
+                    'snowIN' : period['snowIN'],
+                    'weather' : period['weatherPrimary'],
+                    'weatherCoded' : period['weatherPrimaryCoded'],
+                    'humidity' : period['minHumidity'],
+                    'conditions' : conditions
+                })
+            forecasts.append(forecastsdata)
+        else:
+            return
     
     return forecasts
 
