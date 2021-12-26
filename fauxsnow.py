@@ -1,4 +1,4 @@
-from os import abort
+from flask  import abort
 import requests
 import json
 import datetime
@@ -34,11 +34,15 @@ def calc_wet_bulb(T, rh) -> float:
     """
     T = calc_celcius(T)   
     rh /= 100             
-    Tw = T * numpy.arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + numpy.arctan([T + rh])[0] - numpy.arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * numpy.arctan([0.023101 * rh])[0] - 4.686035
+    Tw = (T * numpy.arctan([0.151977 * (rh + 8.313659)**(1/2)])[0] + 
+        numpy.arctan([T + rh])[0] - 
+        numpy.arctan([rh - 1.676331])[0] + 0.00391838 *(rh)**(3/2) * 
+        numpy.arctan([0.023101 * rh])[0] - 4.686035)
     return calc_fahrenheit(Tw) 
 
 def is_good_conditions(T, rh) -> bool:
-    """Return whether or not the temperature and relative humidity are favorable for snow making
+    """Return whether or not the temperature and relative humidity are 
+       favorable for snow making
     
     Keyword arguments: 
     T -- the temperature in Celcius 
@@ -95,7 +99,8 @@ def load_ski_resort(text_id) -> dict:
     finally:
         f.close()
 
-    found_value = [resort for resort in resort_list if resort['text_id'] == text_id]
+    found_value = [resort for resort in 
+        resort_list if resort['text_id'] == text_id]
     return found_value[0]
 
 def load_forecast(lat, lon) -> dict:
@@ -105,14 +110,32 @@ def load_forecast(lat, lon) -> dict:
     lat -- the latitude of the weather forecast coordinates
     long -- the longitude of the weather forecast coordinates
     """
-    url = "https://aerisweather1.p.rapidapi.com/forecasts/"+lat+','+lon+'?fields=periods.maxTempF,periods.minTempF,periods.snowIN,periods.minHumidity,periods.weatherPrimary,periods.validTime,periods.weatherPrimaryCoded'
+    # list the specific fields we want in the json response so we don't 
+    # get a huge json file with fields we don't need
+    response_fields = [
+        'periods.maxTempF',
+        'periods.minTempF',
+        'periods.snowIN',
+        'periods.minHumidity',
+        'periods.weatherPrimary',
+        'periods.validTime',
+        'periods.weatherPrimaryCoded'
+        ]
+    
+    url = ("https://aerisweather1.p.rapidapi.com/forecasts/"
+        +lat+','+lon+'?fields='
+        +','.join(response_fields))
+    
     api_key = os.environ.get('API_KEY')
+    
     header_vals = {
         'x-rapidapi-host': "aerisweather1.p.rapidapi.com",
         'x-rapidapi-key': api_key
     }
+
     response = requests.request("GET", url, headers=header_vals)
     data = json.loads(response.text)
+
     return data
 
 def save_forecasts(forecasts):
@@ -126,22 +149,27 @@ def save_forecasts(forecasts):
         json.dump(forecasts, outfile, indent=4)
 
 def load_forecasts_from_api(resorts) -> list:
-    """load the weather forecast json to a list of dict objects. Returns None if we have reached the api call limit
+    """load the weather forecast json to a list of dict objects. 
+    Returns None if we have reached the api call limit
     
     Keyword arguments: 
     resorts -- a list of resort dict objects
     """
     forecasts = []
     for ski_resort in resorts:
-        forecast = load_forecast(ski_resort['location']['lat'], ski_resort['location']['long'])
+        forecast = load_forecast(
+            ski_resort['location']['lat'], 
+            ski_resort['location']['long'])
         response = forecast.get('response')
 
-        # if the api call doesn't return a response value, exit the function and return None
+        # if the api call doesn't return a response value, 
+        # exit the function and return None
         if response:
 
             forecastsdata = {
                 "text_id" : ski_resort["text_id"],
-                "forecast_date" : str(datetime.datetime.now().strftime("%d/%m/%Y %I:%M %p")),
+                "forecast_date" : str(
+                    datetime.datetime.now().strftime("%d/%m/%Y %I:%M %p")),
                 "periods" : []
             }
 
@@ -151,20 +179,23 @@ def load_forecasts_from_api(resorts) -> list:
 
                 conditions = ''
                 if match:
-                    print('Raw = ',period['weatherPrimaryCoded'],'; Code = ', match.group())
-                    if match.group() in [':BS',':S',':SW',':WM']: # check for Blowing Snow, Snow, Snow Showers, or Wintry Mix
+                    # check for Blowing Snow, Snow, Snow Showers, or Wintry Mix
+                    # and a snow accumulation of more that 1/4 inch
+                    if (match.group() in [':BS',':S',':SW',':WM'] 
+                        and period['snowIN'] > .25): 
                         conditions = 'Snow'
-                    elif is_good_conditions(period['minTempF'],period['minHumidity']) and match in [':CL',':FW',':SC',':BK',':OV']: # check for a cloud code - indicates absence of non-snow weather (ice, rain, etc.)
+                    # check for a cloud code - indicates absence of non-snow 
+                    # weather (ice, rain, etc.)
+                    elif (is_good_conditions(
+                            period['minTempF'], 
+                            period['minHumidity']) 
+                        and match in [':CL',':FW',':SC',':BK',':OV']): 
                         conditions = 'Faux'
-                else:
-                    print('no match')
-                
-                
-
-                
                 
                 forecastsdata['periods'].append({
-                    'date' : str(datetime.datetime.strptime(period['validTime'], '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
+                    'date' : str(
+                        datetime.datetime.strptime(period['validTime'], 
+                        '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
                     'minTemp' : period['minTempF'],
                     'maxTemp' : period['maxTempF'],
                     'snowIN' : period['snowIN'],
@@ -192,25 +223,31 @@ def load_forecasts_from_file() -> list:
 def combine_resorts_forecasts(resorts, forecasts) -> list:
     combined = []
     for resort in resorts:
-        for forecast in forecasts:
-            if forecast['text_id'] == resort['text_id']:
-                combined.append({
-                    "text_id" : resort['text_id'],
-                    "resort" : resort,
-                    "forecast" : forecast
-                })
+        forecast_match = next(fo for fo in forecasts \
+            if fo['text_id'] == resort['text_id'])
+        combined.append({
+            "text_id" : resort['text_id'],
+            "resort" : resort,
+            "forecast" : forecast_match
+        })
     return combined
 
 def combine_resort_forecast(resorts, forecasts, resort_id) -> dict:
     combined = {}
-    for resort in resorts:
-        if resort['text_id'] == resort_id:
-            for forecast in forecasts:
-                if forecast['text_id'] == resort_id:
-                    combined["text_id"] = resort['text_id']
-                    combined["resort"] = resort
-                    combined["forecast"] = forecast
-    return combined
+    try:
+        resort_match = next(
+            res for res in resorts if res['text_id'] == resort_id)
+
+        forecast_match = next(
+            fo for fo in forecasts if fo['text_id'] == resort_id)
+
+        combined['text_id'] = resort_id
+        combined['resort'] = resort_match
+        combined['forecast'] = forecast_match
+        return combined
+
+    except StopIteration:
+        abort(404)
 
 def forecast_date() -> str:
     fname = pathlib.Path('data/forecasts.json')
