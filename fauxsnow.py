@@ -264,7 +264,7 @@ def combine_resort_forecast(resorts, forecasts, resort_id) -> dict:
     except StopIteration:
         abort(404)
 
-def forecast_date(forecasts) -> str:
+def forecasts_date(forecasts) -> str:
     return forecasts[0]['forecast_date']
 
 def forecast_date(forecast) -> str:
