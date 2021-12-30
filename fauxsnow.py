@@ -7,21 +7,24 @@ import pathlib
 import os
 import re
 
-def calc_celcius(Tf) -> float:
+SKI_RESORTS_FILE = 'data/ski_resorts.json'
+FORECASTS_FILE = 'data/forecasts.json'
+
+def calc_celcius(Tf) -> int:
     """Return a temperature converted from Fahrenheit to Celcius
     
     Keyword arguments:
     Tf -- the temperature in Fahrenheit
     """
-    return (Tf - 32) * (5/9)
+    return round((Tf - 32) * (5/9))
 
-def calc_fahrenheit(Tc) -> float:
+def calc_fahrenheit(Tc) -> int:
     """Return a temperature converted from Celcius to Fharenheit
     
     Keyword arguments:
     Tc -- the temperature in Celcius
     """
-    return (Tc * (9/5)) + 32
+    return round((Tc * (9/5)) + 32)
 
 # Function immplemented but not in use. 
 # Easier to just test the boundaries of the temp/rel. humidity matrix.
@@ -76,11 +79,11 @@ def is_good_conditions(T, rh) -> bool:
     
     return conditions_are_good
 
-def load_ski_resorts() -> list:
+def load_ski_resorts(file=SKI_RESORTS_FILE) -> list:
     """Returns a list of ski resorts
     
     """
-    f = open(f'data/ski-resorts.json')
+    f = open(file)
     try:
         data = json.load(f)
     finally:
@@ -93,7 +96,7 @@ def load_ski_resort(text_id) -> dict:
     Keyword arguments: 
     text_id -- the code name of the resort to be returned 
     """
-    f = open(f'data/ski-resorts.json')
+    f = open(SKI_RESORTS_FILE)
     try:
         resort_list = json.load(f)
     finally:
@@ -210,15 +213,27 @@ def load_forecasts_from_api(resorts) -> list:
     
     return forecasts
 
-def load_forecasts_from_file() -> list:
+def load_forecasts_from_file(file=FORECASTS_FILE) -> list:
     """Return forecast data from a file
     """
-    f = open(f'data/forecasts.json')
+    f = open(file)
     try:
         data = json.load(f)
     finally:
         f.close()
     return data
+
+def load_forecast_from_file(text_id, file=FORECASTS_FILE) -> list:
+    """Return forecast data from a file
+    """
+    f = open(file)
+    try:
+        forecasts = json.load(f)
+        forecast_match = next(fo for fo in forecasts \
+            if fo['text_id'] == text_id)
+    finally:
+        f.close()
+    return forecast_match
 
 def combine_resorts_forecasts(resorts, forecasts) -> list:
     combined = []
@@ -249,8 +264,8 @@ def combine_resort_forecast(resorts, forecasts, resort_id) -> dict:
     except StopIteration:
         abort(404)
 
-def forecast_date() -> str:
-    fname = pathlib.Path('data/forecasts.json')
-    if fname.exists():
-        mtime = datetime.datetime.fromtimestamp(fname.stat().st_mtime)
-        return str(mtime.strftime('%a, %d %b @ %I:%M %p ET'))
+def forecast_date(forecasts) -> str:
+    return forecasts[0]['forecast_date']
+
+def forecast_date(forecast) -> str:
+    return forecast['forecast_date']
