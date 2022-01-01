@@ -192,7 +192,7 @@ def load_forecasts_from_api(resorts) -> list:
                     elif (is_good_conditions(
                             period['minTempF'], 
                             period['minHumidity']) 
-                        and match in [':CL',':FW',':SC',':BK',':OV',':BS',':S',':SW',':WM']): 
+                        and match.group() in [':CL',':FW',':SC',':BK',':OV',':BS',':S',':SW',':WM']): 
                         conditions = 'Faux'
                 
                 forecastsdata['periods'].append({
