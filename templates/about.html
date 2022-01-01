@@ -1,0 +1,157 @@
+
+{% extends "base.html" %}
+
+{% block title %} Faux/Snow - Details {% endblock %}
+
+{% block content %}
+<main role="main" class="container" style="background-color: #e7eff6;">
+    <p>&nbsp;</p>
+    <div class="row mb-2">
+        <div class="col-md-12">
+            
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative " style="background-color: #FFFFFF;">
+                <div class="col-auto d-none d-lg-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-thermometer-snow" viewBox="0 0 16 16">
+                        <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585A1.5 1.5 0 0 1 5 12.5z"/>
+                        <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1.293l.646-.647a.5.5 0 0 1 .708.708L9 5.207v1.927l1.669-.963.495-1.85a.5.5 0 1 1 .966.26l-.237.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.884.237a.5.5 0 1 1-.26.966l-1.848-.495L9.5 8l1.669.963 1.849-.495a.5.5 0 1 1 .258.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.237.883a.5.5 0 1 1-.966.258L10.67 9.83 9 8.866v1.927l1.354 1.353a.5.5 0 0 1-.708.708L9 12.207V13.5a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5z"/>
+                      </svg></a>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">About Faux-Snow</h3>
+                    <div class="mb-1 text-muted">Your Source for the Good (Enough) Stuff</div>
+                    <div>
+                        <p>&nbsp;</p>
+                        <h4>How to read the forecasts:</h4>
+                        <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-thermometer-snow" viewBox="0 0 16 16">
+                            <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585A1.5 1.5 0 0 1 5 12.5z"/>
+                            <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1.293l.646-.647a.5.5 0 0 1 .708.708L9 5.207v1.927l1.669-.963.495-1.85a.5.5 0 1 1 .966.26l-.237.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.884.237a.5.5 0 1 1-.26.966l-1.848-.495L9.5 8l1.669.963 1.849-.495a.5.5 0 1 1 .258.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.237.883a.5.5 0 1 1-.966.258L10.67 9.83 9 8.866v1.927l1.354 1.353a.5.5 0 0 1-.708.708L9 12.207V13.5a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5z"/>
+                          </svg> = Faux Snow (conditions are good for snowmaking)
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-snow3" viewBox="0 0 16 16">
+                                <path d="M8 7.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1z"/>
+                                <path d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.51l-2.053-1.232-1.348.778-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.883-.237a.5.5 0 1 1 .258-.966l1.85.495L5 9.155v-2.31l-1.4-.808-1.85.495a.5.5 0 1 1-.259-.966l.884-.237-1.12-.646a.5.5 0 0 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849 1.348.778L7.5 4.717v-1.51L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.51l2.053 1.232 1.348-.778.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-1.4.808v2.31l1.4.808 1.849-.495a.5.5 0 1 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-1.348-.778L8.5 11.283v1.51l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5zm2-6.783V6.783l-2-1.2-2 1.2v2.434l2 1.2 2-1.2z"/>
+                              </svg> = Snow (actual snow falling from the sky)
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                              </svg> = No real snow, no faux snow
+        
+                        </p>
+                        <h4>Why was this built?</h4>
+                        <p>After moving from Colorado to Kentucky I'm looking for some snowboarding options that don't involve a plane ride. In Colorado, ski plans are generally based on natural snowfall totals. The deeper the fresh powder, the better your day will be. There are great sites available that track snow totals and help you make plans - shoutout to <a href="http://www.opensnow.com/">opensnow.com</a>.</p>
+
+                            <p>In Kentkucy, the nearest ski resorts are in Indiana, West Virginia, Tennessee, and North Carolina. fresh snow is less frequent with less total accumulation which makes snow forecasts less helpful in finding the good (enough) conditions. Instead of tracking snowfall, it makes more sense to track the optimal conditions for man-made snow.</p>
+                            
+                            <p>This app will help find the best man-made powder conditions in the South and Midwest.</p>
+                            <h4>What makes for good Faux-Snow?</h4>
+                            <p>Good snow-making conditions require 2+ consecutive days of wet-bulb temperatures of 20(F) or below. Wet-bulb temperature can be calculated based on the Temperature and the Relative Humidity as shown in the table below.</p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                <th></th>
+                                <th>10%</th>
+                                <th>20%</th>
+                                <th>30%</th>
+                                <th>40%</th>
+                                <th>50%</th>
+                                <th>60%</th>
+                                <th>70%</th>
+                                <th>80%</th>
+                                <th>90%</th>
+                                <th>100%</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td><strong>20 (F)</strong></td>
+                                <td><strong>14</strong></td>
+                                <td><strong>14</strong></td>
+                                <td><strong>15</strong></td>
+                                <td><strong>16</strong></td>
+                                <td><strong>16</strong></td>
+                                <td><strong>17</strong></td>
+                                <td><strong>18</strong></td>
+                                <td><strong>19</strong></td>
+                                <td><strong>19</strong></td>
+                                <td><strong>20</strong></td>
+                                </tr>
+                                <tr>
+                                <td><strong>22 (F)</strong></td>
+                                <td><strong>15</strong></td>
+                                <td><strong>15</strong></td>
+                                <td><strong>17</strong></td>
+                                <td><strong>17</strong></td>
+                                <td><strong>18</strong></td>
+                                <td><strong>19</strong></td>
+                                <td><strong>20</strong></td>
+                                <td>21</td>
+                                <td>21</td>
+                                <td>22</td>
+                                </tr>
+                                <tr>
+                                <td><strong>24 (F)</strong></td>
+                                <td><strong>17</strong></td>
+                                <td><strong>18</strong></td>
+                                <td><strong>18</strong></td>
+                                <td><strong>19</strong></td>
+                                <td><strong>20</strong></td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                </tr>
+                                <tr>
+                                <td><strong>26 (F)</strong></td>
+                                <td><strong>18</strong></td>
+                                <td><strong>19</strong></td>
+                                <td><strong>20</strong></td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                </tr>
+                                <tr>
+                                <td><strong>28 (F)</strong></td>
+                                <td><strong>20</strong></td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                </tr>
+                                <tr>
+                                <td><strong>30 (F)</strong></td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</main>
+
+{% endblock %}

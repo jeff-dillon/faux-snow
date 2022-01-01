@@ -36,3 +36,7 @@ def refresh():
     else:
         message = 'could not update forecasts'
     return render_template('refresh.html', message=message)
+
+@app.route("/about")
+def abour():
+    return render_template("about.html")
