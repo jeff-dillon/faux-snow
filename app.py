@@ -19,7 +19,7 @@ def detail(text_id):
         resort = fauxsnow.load_ski_resort(text_id)
         forecast = fauxsnow.load_forecast_from_file(text_id)
         return render_template("detail.html", 
-            combined = fauxsnow.combine_resort_forecast(resort, forecast), 
+            combined = fauxsnow.combine_resort_forecast(resort, forecast, text_id), 
             forecast_date=fauxsnow.forecast_date(forecast))
     except IndexError:
         abort(404)

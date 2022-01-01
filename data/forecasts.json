@@ -1,52 +1,42 @@
 [
     {
         "text_id": "perfect-north-slopes",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 42,
-                "maxTemp": 52,
+                "date": "Fri 31",
+                "minTemp": 53,
+                "maxTemp": 61,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 83,
+                "weather": "Showers",
+                "weatherCoded": ":L:RW",
+                "humidity": 75,
                 "conditions": ""
             },
             {
-                "date": "31-Dec",
-                "minTemp": 51,
-                "maxTemp": 62,
+                "date": "Sat 01",
+                "minTemp": 33,
+                "maxTemp": 58,
                 "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C:L:R",
-                "humidity": 72,
+                "weather": "Isolated Storms",
+                "weatherCoded": "S::T",
+                "humidity": 89,
                 "conditions": ""
             },
             {
-                "date": "01-Jan",
-                "minTemp": 28,
-                "maxTemp": 57,
-                "snowIN": 0,
-                "weather": "Rain",
-                "weatherCoded": "D::R",
-                "humidity": 86,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 15,
-                "maxTemp": 34,
-                "snowIN": 0.03,
+                "date": "Sun 02",
+                "minTemp": 18,
+                "maxTemp": 36,
+                "snowIN": 0.12,
                 "weather": "Chance of Wintry Mix",
                 "weatherCoded": "C:L:WM",
-                "humidity": 63,
+                "humidity": 64,
                 "conditions": ""
             },
             {
-                "date": "03-Jan",
-                "minTemp": 25,
-                "maxTemp": 36,
+                "date": "Mon 03",
+                "minTemp": 23,
+                "maxTemp": 35,
                 "snowIN": 0,
                 "weather": "Sunny",
                 "weatherCoded": "::CL",
@@ -54,151 +44,75 @@
                 "conditions": ""
             },
             {
-                "date": "04-Jan",
-                "minTemp": 33,
+                "date": "Tue 04",
+                "minTemp": 34,
                 "maxTemp": 45,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 48,
+                "humidity": 47,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
-                "minTemp": 36,
-                "maxTemp": 49,
-                "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C:L:R",
-                "humidity": 65,
+                "date": "Wed 05",
+                "minTemp": 27,
+                "maxTemp": 45,
+                "snowIN": 0.04,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 60,
                 "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 25,
+                "maxTemp": 38,
+                "snowIN": 2.64,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 69,
+                "conditions": "Snow"
             }
         ]
     },
     {
         "text_id": "paoli-peaks",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 46,
-                "maxTemp": 55,
+                "date": "Fri 31",
+                "minTemp": 53,
+                "maxTemp": 65,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
                 "humidity": 83,
                 "conditions": ""
             },
             {
-                "date": "31-Dec",
-                "minTemp": 51,
-                "maxTemp": 64,
+                "date": "Sat 01",
+                "minTemp": 33,
+                "maxTemp": 59,
                 "snowIN": 0,
-                "weather": "Isolated Showers",
-                "weatherCoded": "S:L:RW",
-                "humidity": 81,
+                "weather": "Isolated Thunderstorms",
+                "weatherCoded": "S::T",
+                "humidity": 96,
                 "conditions": ""
             },
             {
-                "date": "01-Jan",
-                "minTemp": 26,
-                "maxTemp": 58,
-                "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "D::RW",
-                "humidity": 100,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 15,
-                "maxTemp": 34,
-                "snowIN": 0.02,
-                "weather": "Isolated Snow Showers",
-                "weatherCoded": "S:L:SW",
-                "humidity": 69,
-                "conditions": ""
-            },
-            {
-                "date": "03-Jan",
-                "minTemp": 25,
-                "maxTemp": 37,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 47,
-                "conditions": ""
-            },
-            {
-                "date": "04-Jan",
-                "minTemp": 34,
-                "maxTemp": 46,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 54,
-                "conditions": ""
-            },
-            {
-                "date": "05-Jan",
-                "minTemp": 38,
-                "maxTemp": 51,
+                "date": "Sun 02",
+                "minTemp": 16,
+                "maxTemp": 39,
                 "snowIN": 0,
                 "weather": "Scattered Showers",
                 "weatherCoded": "C:L:RW",
-                "humidity": 79,
-                "conditions": ""
-            }
-        ]
-    },
-    {
-        "text_id": "ober-gatlinburg",
-        "forecast_date": "30/12/2021 03:17 PM",
-        "periods": [
-            {
-                "date": "30-Dec",
-                "minTemp": 51,
-                "maxTemp": 63,
-                "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": ":VL:RW",
-                "humidity": 72,
+                "humidity": 71,
                 "conditions": ""
             },
             {
-                "date": "31-Dec",
-                "minTemp": 59,
-                "maxTemp": 67,
-                "snowIN": 0,
-                "weather": "Isolated Storms",
-                "weatherCoded": "S::T",
-                "humidity": 55,
-                "conditions": ""
-            },
-            {
-                "date": "01-Jan",
-                "minTemp": 42,
-                "maxTemp": 69,
-                "snowIN": 0,
-                "weather": "Isolated Storms",
-                "weatherCoded": "S::T",
-                "humidity": 68,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 21,
-                "maxTemp": 55,
-                "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 65,
-                "conditions": ""
-            },
-            {
-                "date": "03-Jan",
-                "minTemp": 25,
-                "maxTemp": 39,
+                "date": "Mon 03",
+                "minTemp": 23,
+                "maxTemp": 37,
                 "snowIN": 0,
                 "weather": "Sunny",
                 "weatherCoded": "::CL",
@@ -206,75 +120,85 @@
                 "conditions": ""
             },
             {
-                "date": "04-Jan",
-                "minTemp": 31,
-                "maxTemp": 47,
+                "date": "Tue 04",
+                "minTemp": 33,
+                "maxTemp": 46,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 47,
+                "humidity": 53,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
-                "minTemp": 33,
-                "maxTemp": 52,
-                "snowIN": 0,
+                "date": "Wed 05",
+                "minTemp": 27,
+                "maxTemp": 46,
+                "snowIN": 0.39,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 66,
+                "humidity": 67,
                 "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 19,
+                "maxTemp": 38,
+                "snowIN": 4.14,
+                "weather": "Chance of Snow Showers",
+                "weatherCoded": "C::SW",
+                "humidity": 75,
+                "conditions": "Snow"
             }
         ]
     },
     {
-        "text_id": "winterplace",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "text_id": "ober-gatlinburg",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 44,
-                "maxTemp": 57,
+                "date": "Fri 31",
+                "minTemp": 60,
+                "maxTemp": 66,
                 "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 86,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 56,
                 "conditions": ""
             },
             {
-                "date": "31-Dec",
-                "minTemp": 51,
-                "maxTemp": 59,
+                "date": "Sat 01",
+                "minTemp": 53,
+                "maxTemp": 71,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 62,
+                "weather": "Isolated Storms",
+                "weatherCoded": "S::T",
+                "humidity": 67,
                 "conditions": ""
             },
             {
-                "date": "01-Jan",
-                "minTemp": 42,
-                "maxTemp": 64,
-                "snowIN": 0,
-                "weather": "Rain",
-                "weatherCoded": "D::R",
-                "humidity": 78,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 17,
-                "maxTemp": 52,
+                "date": "Sun 02",
+                "minTemp": 22,
+                "maxTemp": 60,
                 "snowIN": 0,
                 "weather": "Showers",
-                "weatherCoded": "D:L:RW",
-                "humidity": 68,
+                "weatherCoded": "L:L:RW",
+                "humidity": 75,
                 "conditions": ""
             },
             {
-                "date": "03-Jan",
-                "minTemp": 20,
-                "maxTemp": 30,
+                "date": "Mon 03",
+                "minTemp": 26,
+                "maxTemp": 39,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 50,
+                "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 32,
+                "maxTemp": 47,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
@@ -282,131 +206,197 @@
                 "conditions": ""
             },
             {
-                "date": "04-Jan",
-                "minTemp": 28,
+                "date": "Wed 05",
+                "minTemp": 37,
+                "maxTemp": 50,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 66,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 38,
+                "maxTemp": 50,
+                "snowIN": 1.49,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 71,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "text_id": "winterplace",
+        "forecast_date": "31/12/2021 05:50 PM",
+        "periods": [
+            {
+                "date": "Fri 31",
+                "minTemp": 53,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 57,
+                "conditions": ""
+            },
+            {
+                "date": "Sat 01",
+                "minTemp": 51,
+                "maxTemp": 64,
+                "snowIN": 0,
+                "weather": "Isolated Storms",
+                "weatherCoded": "S::T",
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 02",
+                "minTemp": 19,
+                "maxTemp": 55,
+                "snowIN": 0,
+                "weather": "Light Rain",
+                "weatherCoded": "D:L:R",
+                "humidity": 74,
+                "conditions": ""
+            },
+            {
+                "date": "Mon 03",
+                "minTemp": 20,
+                "maxTemp": 29,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 55,
+                "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 27,
                 "maxTemp": 43,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 45,
+                "humidity": 48,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
-                "minTemp": 30,
-                "maxTemp": 46,
+                "date": "Wed 05",
+                "minTemp": 29,
+                "maxTemp": 44,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 63,
+                "humidity": 66,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 32,
+                "maxTemp": 44,
+                "snowIN": 1.32,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:RW",
+                "humidity": 69,
                 "conditions": ""
             }
         ]
     },
     {
         "text_id": "snowshoe",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 39,
-                "maxTemp": 50,
+                "date": "Fri 31",
+                "minTemp": 47,
+                "maxTemp": 53,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 89,
+                "weather": "Rain Showers",
+                "weatherCoded": ":VL:RW",
+                "humidity": 61,
                 "conditions": ""
             },
             {
-                "date": "31-Dec",
-                "minTemp": 46,
-                "maxTemp": 52,
+                "date": "Sat 01",
+                "minTemp": 45,
+                "maxTemp": 56,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 67,
-                "conditions": ""
-            },
-            {
-                "date": "01-Jan",
-                "minTemp": 38,
-                "maxTemp": 54,
-                "snowIN": 0,
-                "weather": "Rain",
-                "weatherCoded": "D::R",
+                "weather": "Rain Showers",
+                "weatherCoded": "D::RW",
                 "humidity": 88,
                 "conditions": ""
             },
             {
-                "date": "02-Jan",
-                "minTemp": 13,
-                "maxTemp": 48,
-                "snowIN": 1.07,
-                "weather": "Rain Showers",
-                "weatherCoded": "D:L:RW",
-                "humidity": 77,
+                "date": "Sun 02",
+                "minTemp": 16,
+                "maxTemp": 49,
+                "snowIN": 1.86,
+                "weather": "Light Rain",
+                "weatherCoded": "D:L:R",
+                "humidity": 81,
                 "conditions": ""
             },
             {
-                "date": "03-Jan",
-                "minTemp": 17,
-                "maxTemp": 22,
+                "date": "Mon 03",
+                "minTemp": 18,
+                "maxTemp": 23,
                 "snowIN": 0.05,
                 "weather": "Isolated Snow Showers",
                 "weatherCoded": "S:L:SW",
-                "humidity": 58,
+                "humidity": 59,
                 "conditions": ""
             },
             {
-                "date": "04-Jan",
+                "date": "Tue 04",
                 "minTemp": 25,
                 "maxTemp": 36,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 47,
+                "humidity": 46,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
-                "minTemp": 28,
-                "maxTemp": 39,
-                "snowIN": 0,
+                "date": "Wed 05",
+                "minTemp": 26,
+                "maxTemp": 37,
+                "snowIN": 0.06,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 65,
+                "humidity": 73,
                 "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 28,
+                "maxTemp": 35,
+                "snowIN": 3.34,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 71,
+                "conditions": "Snow"
             }
         ]
     },
     {
         "text_id": "canaan-valley",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 39,
-                "maxTemp": 52,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 89,
-                "conditions": ""
-            },
-            {
-                "date": "31-Dec",
+                "date": "Fri 31",
                 "minTemp": 47,
                 "maxTemp": 56,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
+                "weather": "Showers",
+                "weatherCoded": ":L:RW",
                 "humidity": 59,
                 "conditions": ""
             },
             {
-                "date": "01-Jan",
-                "minTemp": 42,
-                "maxTemp": 58,
+                "date": "Sat 01",
+                "minTemp": 50,
+                "maxTemp": 59,
                 "snowIN": 0,
                 "weather": "Showers",
                 "weatherCoded": "D::RW",
@@ -414,227 +404,85 @@
                 "conditions": ""
             },
             {
-                "date": "02-Jan",
-                "minTemp": 14,
+                "date": "Sun 02",
+                "minTemp": 16,
                 "maxTemp": 50,
-                "snowIN": 0.65,
+                "snowIN": 0.64,
                 "weather": "Showers",
-                "weatherCoded": "D:L:RW",
-                "humidity": 74,
+                "weatherCoded": "L:L:RW",
+                "humidity": 85,
                 "conditions": ""
             },
             {
-                "date": "03-Jan",
-                "minTemp": 17,
-                "maxTemp": 26,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 58,
-                "conditions": ""
-            },
-            {
-                "date": "04-Jan",
-                "minTemp": 28,
-                "maxTemp": 40,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 47,
-                "conditions": ""
-            },
-            {
-                "date": "05-Jan",
-                "minTemp": 30,
-                "maxTemp": 44,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
+                "date": "Mon 03",
+                "minTemp": 18,
+                "maxTemp": 25,
+                "snowIN": 0.03,
+                "weather": "Snow Showers",
+                "weatherCoded": ":VL:SW",
                 "humidity": 62,
                 "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 26,
+                "maxTemp": 42,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 43,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 05",
+                "minTemp": 27,
+                "maxTemp": 42,
+                "snowIN": 0.01,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 70,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 29,
+                "maxTemp": 38,
+                "snowIN": 3.01,
+                "weather": "Wintry Mix",
+                "weatherCoded": "L:L:WM",
+                "humidity": 69,
+                "conditions": "Snow"
             }
         ]
     },
     {
         "text_id": "cataloochee",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 48,
-                "maxTemp": 57,
-                "snowIN": 0,
-                "weather": "Isolated Showers",
-                "weatherCoded": "IS:L:RW",
-                "humidity": 83,
-                "conditions": ""
-            },
-            {
-                "date": "31-Dec",
-                "minTemp": 54,
-                "maxTemp": 60,
-                "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "SC:L:RW",
-                "humidity": 55,
-                "conditions": ""
-            },
-            {
-                "date": "01-Jan",
-                "minTemp": 41,
-                "maxTemp": 63,
-                "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "D:L:RW",
-                "humidity": 73,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 18,
-                "maxTemp": 53,
-                "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 65,
-                "conditions": ""
-            },
-            {
-                "date": "03-Jan",
-                "minTemp": 24,
-                "maxTemp": 36,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 42,
-                "conditions": ""
-            },
-            {
-                "date": "04-Jan",
-                "minTemp": 29,
-                "maxTemp": 43,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 42,
-                "conditions": ""
-            },
-            {
-                "date": "05-Jan",
-                "minTemp": 32,
-                "maxTemp": 46,
-                "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": ":VL:RW",
-                "humidity": 57,
-                "conditions": ""
-            }
-        ]
-    },
-    {
-        "text_id": "beech-mountain",
-        "forecast_date": "30/12/2021 03:17 PM",
-        "periods": [
-            {
-                "date": "30-Dec",
-                "minTemp": 44,
-                "maxTemp": 55,
-                "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": ":VL:RW",
-                "humidity": 86,
-                "conditions": ""
-            },
-            {
-                "date": "31-Dec",
-                "minTemp": 50,
-                "maxTemp": 56,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 56,
-                "conditions": ""
-            },
-            {
-                "date": "01-Jan",
-                "minTemp": 39,
-                "maxTemp": 61,
-                "snowIN": 0,
-                "weather": "Isolated Storms",
-                "weatherCoded": "S::T",
-                "humidity": 73,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 15,
-                "maxTemp": 49,
-                "snowIN": 8.27,
-                "weather": "Rain Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 69,
-                "conditions": ""
-            },
-            {
-                "date": "03-Jan",
-                "minTemp": 19,
-                "maxTemp": 27,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": ""
-            },
-            {
-                "date": "04-Jan",
-                "minTemp": 25,
-                "maxTemp": 37,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 49,
-                "conditions": ""
-            },
-            {
-                "date": "05-Jan",
-                "minTemp": 28,
-                "maxTemp": 41,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 64,
-                "conditions": ""
-            }
-        ]
-    },
-    {
-        "text_id": "sugar-mountain",
-        "forecast_date": "30/12/2021 03:17 PM",
-        "periods": [
-            {
-                "date": "30-Dec",
-                "minTemp": 46,
+                "date": "Fri 31",
+                "minTemp": 55,
                 "maxTemp": 58,
                 "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": ":VL:RW",
-                "humidity": 83,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 63,
                 "conditions": ""
             },
             {
-                "date": "31-Dec",
-                "minTemp": 52,
-                "maxTemp": 60,
+                "date": "Sat 01",
+                "minTemp": 48,
+                "maxTemp": 61,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 56,
+                "weather": "Rain Showers",
+                "weatherCoded": "L::RW",
+                "humidity": 80,
                 "conditions": ""
             },
             {
-                "date": "01-Jan",
-                "minTemp": 42,
-                "maxTemp": 64,
+                "date": "Sun 02",
+                "minTemp": 20,
+                "maxTemp": 55,
                 "snowIN": 0,
                 "weather": "Isolated Storms",
                 "weatherCoded": "S::T",
@@ -642,195 +490,347 @@
                 "conditions": ""
             },
             {
-                "date": "02-Jan",
-                "minTemp": 18,
-                "maxTemp": 54,
+                "date": "Mon 03",
+                "minTemp": 24,
+                "maxTemp": 36,
                 "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "L::RW",
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 46,
+                "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 29,
+                "maxTemp": 42,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 46,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 05",
+                "minTemp": 32,
+                "maxTemp": 44,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
                 "humidity": 66,
                 "conditions": ""
             },
             {
-                "date": "03-Jan",
-                "minTemp": 20,
-                "maxTemp": 32,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 49,
+                "date": "Thu 06",
+                "minTemp": 35,
+                "maxTemp": 45,
+                "snowIN": 0.1,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C::WM",
+                "humidity": 66,
                 "conditions": ""
-            },
+            }
+        ]
+    },
+    {
+        "text_id": "beech-mountain",
+        "forecast_date": "31/12/2021 05:50 PM",
+        "periods": [
             {
-                "date": "04-Jan",
-                "minTemp": 26,
-                "maxTemp": 41,
+                "date": "Fri 31",
+                "minTemp": 50,
+                "maxTemp": 55,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
                 "humidity": 50,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
+                "date": "Sat 01",
+                "minTemp": 45,
+                "maxTemp": 60,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C::RW",
+                "humidity": 74,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 02",
+                "minTemp": 19,
+                "maxTemp": 51,
+                "snowIN": 0,
+                "weather": "Isolated Storms",
+                "weatherCoded": "S::T",
+                "humidity": 73,
+                "conditions": ""
+            },
+            {
+                "date": "Mon 03",
+                "minTemp": 20,
+                "maxTemp": 29,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 55,
+                "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 25,
+                "maxTemp": 36,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 60,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 05",
                 "minTemp": 30,
-                "maxTemp": 45,
+                "maxTemp": 40,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 62,
+                "humidity": 75,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 31,
+                "maxTemp": 41,
+                "snowIN": 0.41,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 75,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "text_id": "sugar-mountain",
+        "forecast_date": "31/12/2021 05:50 PM",
+        "periods": [
+            {
+                "date": "Fri 31",
+                "minTemp": 52,
+                "maxTemp": 58,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 51,
+                "conditions": ""
+            },
+            {
+                "date": "Sat 01",
+                "minTemp": 49,
+                "maxTemp": 63,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C::RW",
+                "humidity": 72,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 02",
+                "minTemp": 20,
+                "maxTemp": 55,
+                "snowIN": 0,
+                "weather": "Isolated Storms",
+                "weatherCoded": "S::T",
+                "humidity": 73,
+                "conditions": ""
+            },
+            {
+                "date": "Mon 03",
+                "minTemp": 22,
+                "maxTemp": 33,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 51,
+                "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 27,
+                "maxTemp": 39,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 55,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 05",
+                "minTemp": 30,
+                "maxTemp": 44,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 70,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 34,
+                "maxTemp": 44,
+                "snowIN": 0.29,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:RW",
+                "humidity": 70,
                 "conditions": ""
             }
         ]
     },
     {
         "text_id": "wolf-ridge",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 50,
-                "maxTemp": 61,
+                "date": "Fri 31",
+                "minTemp": 57,
+                "maxTemp": 64,
                 "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C:L:R",
-                "humidity": 79,
-                "conditions": ""
-            },
-            {
-                "date": "31-Dec",
-                "minTemp": 56,
-                "maxTemp": 66,
-                "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C:L:RW",
-                "humidity": 50,
-                "conditions": ""
-            },
-            {
-                "date": "01-Jan",
-                "minTemp": 46,
-                "maxTemp": 69,
-                "snowIN": 0,
-                "weather": "Isolated Storms",
-                "weatherCoded": "S::T",
-                "humidity": 68,
-                "conditions": ""
-            },
-            {
-                "date": "02-Jan",
-                "minTemp": 20,
-                "maxTemp": 54,
-                "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 68,
-                "conditions": ""
-            },
-            {
-                "date": "03-Jan",
-                "minTemp": 23,
-                "maxTemp": 35,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 48,
-                "conditions": ""
-            },
-            {
-                "date": "04-Jan",
-                "minTemp": 30,
-                "maxTemp": 46,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
+                "weather": "Rain Showers",
+                "weatherCoded": ":VL:RW",
                 "humidity": 44,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
-                "minTemp": 31,
-                "maxTemp": 50,
+                "date": "Sat 01",
+                "minTemp": 53,
+                "maxTemp": 69,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C::RW",
+                "humidity": 68,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 02",
+                "minTemp": 21,
+                "maxTemp": 59,
+                "snowIN": 0,
+                "weather": "Showers",
+                "weatherCoded": "L:L:RW",
+                "humidity": 82,
+                "conditions": ""
+            },
+            {
+                "date": "Mon 03",
+                "minTemp": 24,
+                "maxTemp": 35,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 52,
+                "conditions": ""
+            },
+            {
+                "date": "Tue 04",
+                "minTemp": 30,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 47,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 05",
+                "minTemp": 36,
+                "maxTemp": 47,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 62,
+                "humidity": 68,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 37,
+                "maxTemp": 48,
+                "snowIN": 0.49,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 71,
                 "conditions": ""
             }
         ]
     },
     {
         "text_id": "appalachian",
-        "forecast_date": "30/12/2021 03:17 PM",
+        "forecast_date": "31/12/2021 05:50 PM",
         "periods": [
             {
-                "date": "30-Dec",
-                "minTemp": 45,
-                "maxTemp": 61,
-                "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": ":VL:RW",
-                "humidity": 70,
-                "conditions": ""
-            },
-            {
-                "date": "31-Dec",
+                "date": "Fri 31",
                 "minTemp": 51,
-                "maxTemp": 62,
+                "maxTemp": 61,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 49,
+                "humidity": 45,
                 "conditions": ""
             },
             {
-                "date": "01-Jan",
-                "minTemp": 48,
-                "maxTemp": 67,
+                "date": "Sat 01",
+                "minTemp": 51,
+                "maxTemp": 68,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:RW",
+                "humidity": 61,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 02",
+                "minTemp": 23,
+                "maxTemp": 57,
                 "snowIN": 0,
                 "weather": "Showers",
-                "weatherCoded": "L:L:RW",
-                "humidity": 66,
+                "weatherCoded": "D::RW",
+                "humidity": 60,
                 "conditions": ""
             },
             {
-                "date": "02-Jan",
-                "minTemp": 18,
-                "maxTemp": 53,
-                "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 73,
-                "conditions": ""
-            },
-            {
-                "date": "03-Jan",
-                "minTemp": 21,
-                "maxTemp": 34,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 39,
-                "conditions": ""
-            },
-            {
-                "date": "04-Jan",
-                "minTemp": 26,
-                "maxTemp": 44,
+                "date": "Mon 03",
+                "minTemp": 22,
+                "maxTemp": 36,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 39,
+                "humidity": 41,
                 "conditions": ""
             },
             {
-                "date": "05-Jan",
-                "minTemp": 29,
+                "date": "Tue 04",
+                "minTemp": 27,
+                "maxTemp": 41,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 44,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 05",
+                "minTemp": 32,
                 "maxTemp": 47,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 51,
+                "humidity": 58,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 06",
+                "minTemp": 33,
+                "maxTemp": 47,
+                "snowIN": 0.21,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 58,
                 "conditions": ""
             }
         ]

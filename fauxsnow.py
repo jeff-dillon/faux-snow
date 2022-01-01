@@ -192,13 +192,13 @@ def load_forecasts_from_api(resorts) -> list:
                     elif (is_good_conditions(
                             period['minTempF'], 
                             period['minHumidity']) 
-                        and match in [':CL',':FW',':SC',':BK',':OV']): 
+                        and match in [':CL',':FW',':SC',':BK',':OV',':BS',':S',':SW',':WM']): 
                         conditions = 'Faux'
                 
                 forecastsdata['periods'].append({
                     'date' : str(
                         datetime.datetime.strptime(period['validTime'], 
-                        '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%d-%b')),
+                        '%Y-%m-%dT%H:%M:%S-05:00').date().strftime('%a %d')),
                     'minTemp' : period['minTempF'],
                     'maxTemp' : period['maxTempF'],
                     'snowIN' : period['snowIN'],
@@ -247,18 +247,18 @@ def combine_resorts_forecasts(resorts, forecasts) -> list:
         })
     return combined
 
-def combine_resort_forecast(resorts, forecasts, resort_id) -> dict:
+def combine_resort_forecast(resort, forecast, resort_id) -> dict:
     combined = {}
     try:
-        resort_match = next(
-            res for res in resorts if res['text_id'] == resort_id)
+        # resort_match = next(
+        #     res for res in resorts if res['text_id'] == resort_id)
 
-        forecast_match = next(
-            fo for fo in forecasts if fo['text_id'] == resort_id)
+        # forecast_match = next(
+        #     fo for fo in forecasts if fo['text_id'] == resort_id)
 
         combined['text_id'] = resort_id
-        combined['resort'] = resort_match
-        combined['forecast'] = forecast_match
+        combined['resort'] = resort
+        combined['forecast'] = forecast
         return combined
 
     except StopIteration:

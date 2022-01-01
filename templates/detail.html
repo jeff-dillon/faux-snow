@@ -4,9 +4,11 @@
 {% block title %} Faux/Snow - Details {% endblock %}
 
 {% block content %}
-<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-3">
-
-    <div class="col">
+<main role="main" class="container" style="background-color: #e7eff6;">
+    <p>&nbsp;</p>
+    <div class="row mb-2">
+      <div class="col-md-12">
+  
       <div class="card shadow-sm">
 
         <div class="card-body">
@@ -21,7 +23,7 @@
             <tr>
                 <th class="text-center" width="12.5%">&nbsp;</th>
                 {% for period in combined['forecast']['periods'] %}
-                    <th  width="12.5%" class="link-secondary text-center">{{ period.date }}</th>
+                    <th  width="12.5%" class="link-secondary text-center text-nowrap">{{ period.date }}</th>
                 {% endfor %}
             </tr>
             <tr>
