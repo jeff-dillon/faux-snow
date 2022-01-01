@@ -17,6 +17,7 @@
       <div class="col p-4 d-flex flex-column position-static">
         <h3 class="mb-0"><a href="{{url_for('detail', text_id=ski_resort['text_id'])}}" class="stretched-link"></a>{{ski_resort['resort']['name']}}</h3>
         <div class="mb-1 text-muted">{{ski_resort['resort']['location']['state']}}</div>
+        <div class="table-responsive">
         <table class="table table-responsive" width="100%">
           <thead class="table-secondary">
             <tr>
@@ -49,6 +50,7 @@
               </tr>
               </tbody>
             </table>
+          </div>
             <div class="container">
               <div class="small text-muted float-end">Last updated: {{ski_resort['forecast']['forecast_date']}}</div>
             </div>
