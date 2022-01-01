@@ -18,11 +18,11 @@
           <h3 class="mb-0"><a href="{{url_for('detail', text_id=ski_resort['text_id'])}}" class="stretched-link"></a>{{ski_resort['resort']['name']}}</h3>
           <div class="mb-1 text-muted">{{ski_resort['resort']['location']['state']}}</div>
           <div class="table-responsive">
-            <table class="table">
+            <table class="table small">
               <thead class="table-secondary">
                 <tr>
                   {% for period in ski_resort['forecast']['periods'] %}
-                  <th class="text-center small text-nowrap" width="14%">{{ period['date'] }}</th>
+                  <th class="text-center small" width="14%">{{ period['date'] }}</th>
                   {% endfor %}
                 </tr>
               </thead>
