@@ -51,7 +51,7 @@
             <tr>
                 <th width="12.5%" scope="row">Accumulation</th>
                 {% for period in resort.forecast.periods %}
-                    <td class="text-center" width="12.5%"><small>{{period.snow_in}}>"</small></td>
+                    <td class="text-center" width="12.5%"><small>{{period.snow_in}}"</small></td>
                 {% endfor %}
             </tr>
             <tr>
@@ -96,7 +96,7 @@
               <table cellpadding="6" cellspacing="6">
                   <tr>
                       <th scope="row">Skiable Terrain (acres)</td>
-                      <td>{resort.acres}}</td>
+                      <td>{{resort.acres}}</td>
                   </tr>
                   <tr>
                       <th scope="row"># Trail</td>
@@ -108,7 +108,7 @@
                   </tr>
                   <tr>
                       <th scope="row">Vertical Drop (feet)</td>
-                      <td>{resort.vertical}}</td>
+                      <td>{{resort.vertical}}</td>
                   </tr>
                   <tr>
                       <th  scope="row" valign="top">Links</td>
