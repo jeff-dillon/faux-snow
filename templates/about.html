@@ -1,7 +1,7 @@
 
 {% extends "base.html" %}
 
-{% block title %} Faux/Snow - Details {% endblock %}
+{% block title %} About Faux/Snow {% endblock %}
 
 {% block content %}
 <main role="main" class="container" style="background-color: #e7eff6;">
@@ -153,6 +153,40 @@
                                 </tr>
                                 </tbody>
                                 </table>
+                                <p>&nbsp;</p>
+                                <h4>Faux-Snow Coverage</h4>
+                                <img width="600" src="{{url_for('static', filename='forecast-states.png')}}"/>
+                                <p>&nbsp;</p>
+                                <p>Faux Snow provides foreacsts for {{num_resorts}} snow-challenged ski resorts:</p>
+                                <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-nowrap">Resort</th>
+                                            <th class="text-nowrap">State</th>
+                                            <th class="text-nowrap">Skiable Acres</th>
+                                            <th class="text-nowrap"># Lifts</th>
+                                            <th class="text-nowrap"># Trails</th>
+                                            <th class="text-nowrap">Vertical Drop</th>
+                                            <th class="text-nowrap">Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for resort in resorts %}
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                <a href="{{resort.main_url}}" target="new">{{resort.name}}</a></td>
+                                            <td>{{resort.state_short}}</td>
+                                            <td>{{resort.acres}}</td>
+                                            <td>{{resort.lifts}}</td>
+                                            <td>{{resort.trails}}</td>
+                                            <td>{{resort.vertical}}'</td>
+                                            <td><a href="{{resort.map_url}}" target="new">{{resort.address}}</a></td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
                             </div>
                     </div>
                 </div>

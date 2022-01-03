@@ -406,5 +406,197 @@
             "lifts" : "13",
             "vertical" : "700"
         }
+    },
+    {
+        "id" : "18",
+        "text_id" : "hidden-valley-mo",
+        "name" : "Hidden Valley (MO)",
+        "logo" : "logo-hidden-valley.png",
+        "location" : {
+            "state" : "Missouri",
+            "state_short" : "MO",
+            "address" : "17409 Hidden Valley Dr, Wildwood, MO 63025",
+            "lat" : "38.53270133305236",
+            "long" : "-90.64833890269509"
+        },
+        "links" : {
+            "main_url" : "https://www.hiddenvalleyski.com/",
+            "conditions_url" : "https://www.hiddenvalleyski.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
+            "map_url" : "https://goo.gl/maps/JDJ6UonpEaDJNv298"
+        },
+        "stats" : {
+            "acres" : "65",
+            "trails" : "17",
+            "lifts" : "5",
+            "vertical" : "320"
+        }
+    },
+    {
+        "id" : "19",
+        "text_id" : "snow-creek-mo",
+        "name" : "Snow Creek (MO)",
+        "logo" : "snow-creek.png",
+        "location" : {
+            "state" : "Missouri",
+            "state_short" : "MO",
+            "address" : "1 Snow Creek Dr, Weston, MO 64098",
+            "lat" : "39.467437299787946",
+            "long" : "-94.97085961985682"
+        },
+        "links" : {
+            "main_url" : "https://www.skisnowcreek.com/",
+            "conditions_url" : "https://www.skisnowcreek.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
+            "map_url" : "https://goo.gl/maps/bBuEeTsuRoHxtQGh9"
+        },
+        "stats" : {
+            "acres" : "65",
+            "trails" : "14",
+            "lifts" : "6",
+            "vertical" : "320"
+        }
+    },
+    {
+        "id" : "20",
+        "text_id" : "snow-trails",
+        "name" : "Snow Trails",
+        "logo" : "snow-trails-logo.png",
+        "location" : {
+            "state" : "Ohio",
+            "state_short" : "OH",
+            "address" : "3100 POSSUM RUN ROAD MANSFIELD, OHIO 44903",
+            "lat" : "40.673074323255015",
+            "long" : "-82.50074951611876"
+        },
+        "links" : {
+            "main_url" : "https://www.snowtrails.com/",
+            "conditions_url" : "https://www.snowtrails.com/snow-report",
+            "map_url" : "https://goo.gl/maps/KyXc2kt1rKzLzd8k9"
+        },
+        "stats" : {
+            "acres" : "80",
+            "trails" : "17",
+            "lifts" : "9",
+            "vertical" : "300"
+        }
+    },
+    {
+        "id" : "21",
+        "text_id" : "mad-river",
+        "name" : "Mad River Mountain",
+        "logo" : "mad-river-mountain.jpg",
+        "location" : {
+            "state" : "Ohio",
+            "state_short" : "OH",
+            "address" : "1000 Snow Valley Rd, Zanesfield, OH 43360",
+            "lat" : "40.31825190764317",
+            "long" : "-83.67784217565097"
+        },
+        "links" : {
+            "main_url" : "https://www.skimadriver.com/",
+            "conditions_url" : "https://www.skimadriver.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
+            "map_url" : "https://goo.gl/maps/wQQWd7fUKf1mkJHY9"
+        },
+        "stats" : {
+            "acres" : "144",
+            "trails" : "20",
+            "lifts" : "12",
+            "vertical" : "300"
+        }
+    },
+    {
+        "id" : "22",
+        "text_id" : "boston-mills-brandywine",
+        "name" : "Boston Mills Brandywine",
+        "logo" : "boston-mills-branywine-logo.png",
+        "location" : {
+            "state" : "Ohio",
+            "state_short" : "OH",
+            "address" : "7100 Riverview Rd, Peninsula, OH 44264",
+            "lat" : "41.26500154068354",
+            "long" : "-81.56434435842772"
+        },
+        "links" : {
+            "main_url" : "https://www.bmbw.com/",
+            "conditions_url" : "https://www.bmbw.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
+            "map_url" : "https://goo.gl/maps/AY69KzWmHkAP7L2j9"
+        },
+        "stats" : {
+            "acres" : "79",
+            "trails" : "18",
+            "lifts" : "16",
+            "vertical" : "240"
+        }
+    },
+    {
+        "id" : "23",
+        "text_id" : "alpine-valley-oh",
+        "name" : "Apline Valley (OH)",
+        "logo" : "alpine-valley-logo.png",
+        "location" : {
+            "state" : "Ohio",
+            "state_short" : "OH",
+            "address" : "10620 Mayfield Rd, Chesterland, OH 44026",
+            "lat" : "41.52706274908419",
+            "long" : "-81.25976646026808"
+        },
+        "links" : {
+            "main_url" : "https://www.alpinevalleyohio.com/",
+            "conditions_url" : "https://www.alpinevalleyohio.com/the-mountain/mountain-conditions/lift-and-terrain-status.aspx",
+            "map_url" : "https://goo.gl/maps/UEdLi3UfGAB4a6Ek6"
+        },
+        "stats" : {
+            "acres" : "72",
+            "trails" : "8",
+            "lifts" : "4",
+            "vertical" : "230"
+        }
+    },
+    {
+        "id" : "24",
+        "text_id" : "snow-star",
+        "name" : "Snow Star",
+        "logo" : "alpine-valley-logo.png",
+        "location" : {
+            "state" : "Illinois",
+            "state_short" : "IL",
+            "address" : "9500 126th St W, Andalusia, IL 61232",
+            "lat" : "41.42612008895813",
+            "long" : "-90.7461749"
+        },
+        "links" : {
+            "main_url" : "https://skisnowstar.com/",
+            "conditions_url" : "https://skisnowstar.com/live-cameras/",
+            "map_url" : "https://goo.gl/maps/H897vrtuKENjEjBx8"
+        },
+        "stats" : {
+            "acres" : "28",
+            "trails" : "14",
+            "lifts" : "6",
+            "vertical" : "262"
+        }
+    },
+    {
+        "id" : "25",
+        "text_id" : "chestnut-mountain",
+        "name" : "Chestnut Mountain Resort",
+        "logo" : "chestnut-logo.png",
+        "location" : {
+            "state" : "Illinois",
+            "state_short" : "IL",
+            "address" : "8700 W Chestnut Mountain Rd, Galena, IL 61036",
+            "lat" : "42.31915183977034",
+            "long" : "-90.39376081606294"
+        },
+        "links" : {
+            "main_url" : "https://www.chestnutmtn.com/",
+            "conditions_url" : "https://www.chestnutmtn.com/slope-report/",
+            "map_url" : "https://goo.gl/maps/8gX6JQGPkCwsgYgt7"
+        },
+        "stats" : {
+            "acres" : "146",
+            "trails" : "18",
+            "lifts" : "6",
+            "vertical" : "475"
+        }
     }
 ]

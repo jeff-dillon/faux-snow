@@ -1,4 +1,4 @@
-import fauxsnow
+from fauxsnow import Resort, ResortModel, Forecast, ForecastModel, ForecastPeriod, ForecastAPILoader, FauxSnow
 from rich import print
 from rich.console import Console
 from rich.table import Table
@@ -9,11 +9,14 @@ def refresh():
         ski resort and save it to file
 
     """
-    resorts = fauxsnow.load_ski_resorts()
-    forecasts = fauxsnow.load_forecasts_from_api(resorts)
+    rm = ResortModel()
+    resorts = rm.get_all_resorts()
+    fAPI = ForecastAPILoader()
+    forecasts = fAPI.load_forecasts_from_api(resorts)
+
     # if the api call returns None, fail gracefully.
     if forecasts:
-        fauxsnow.save_forecasts(forecasts)
+        fAPI.save_forecasts(forecasts)
         print('Updated forecasts')
     else:
         print('could not update forecasts')
@@ -23,8 +26,8 @@ def forecast():
         print a summary to the screen
 
     """
-    forecasts = fauxsnow.load_forecasts_from_file()
-    resorts = fauxsnow.load_ski_resorts()
+    rm = ResortModel()
+    resorts = rm.get_all_resorts()
 
     table = Table(title="Faux-Snow Forecast")
 
@@ -38,29 +41,29 @@ def forecast():
         style="cyan", 
         no_wrap=True)
 
-    for day in forecasts[0]['periods']:
+    for day in resorts[0].forecast.periods:
         table.add_column(
-            day['date'], 
+            day.period_date, 
             justify="center",
             style="cyan", 
             no_wrap=True)
 
     for resort in resorts:
 
-        forecast_match = next((
-            fo for fo in forecasts 
-            if fo['text_id'] == resort['text_id']))
-        periods = forecast_match['periods']
+        # forecast_match = next((
+        #     fo for fo in forecasts 
+        #     if fo['text_id'] == resort['text_id']))
+        # periods = forecast_match['periods']
 
-        table.add_row(resort['text_id'], 
-            "(" + resort['location']['state'] + ") " + resort['name'], 
-            periods[0]['conditions'],
-            periods[1]['conditions'],
-            periods[2]['conditions'],
-            periods[3]['conditions'],
-            periods[4]['conditions'],
-            periods[5]['conditions'],
-            periods[6]['conditions'],
+        table.add_row(resort.resort_id, 
+            "(" + resort.state + ") " + resort.name, 
+            resort.forecast.periods[0].conditions,
+            resort.forecast.periods[1].conditions,
+            resort.forecast.periods[2].conditions,
+            resort.forecast.periods[3].conditions,
+            resort.forecast.periods[4].conditions,
+            resort.forecast.periods[5].conditions,
+            resort.forecast.periods[6].conditions,
         )
 
     console = Console()
@@ -75,43 +78,32 @@ def detail(resort_id):
     Keyword arguments: 
     resort_id -- the id of the ski resort
     """
-    resorts = fauxsnow.load_ski_resorts()
-    forecasts = fauxsnow.load_forecasts_from_file()
+    rm = ResortModel()
+    resort = rm.get_resort_by_id(resort_id)
 
     try:
-        resort_match = next((
-            res for res in resorts 
-            if res['text_id'] == resort_id))
-        forecast_match = next((
-            fo for fo in forecasts 
-            if fo['text_id'] == resort_id))
     
         resort_table = Table(title="Ski Resort Details")
 
-        resort_table.add_column(resort_match['name'], 
+        resort_table.add_column(resort.name, 
             justify="left", 
             style="cyan", 
             no_wrap=True)
 
-        resort_table.add_column(resort_match['location']['address'], 
+        resort_table.add_column(resort.address, 
             justify="left", 
             style="cyan", 
             no_wrap=True)
 
-        resort_table.add_row("Links", 
-            resort_match['links']['conditions_url'])
+        resort_table.add_row("Links", resort.conditions_url)
 
-        resort_table.add_row("Skiable Terrain", 
-            resort_match['stats']['acres'] + " acres")
+        resort_table.add_row("Skiable Terrain", resort.acres + " acres")
 
-        resort_table.add_row("# Lifts", 
-            resort_match['stats']['lifts'])
+        resort_table.add_row("# Lifts", resort.lifts)
 
-        resort_table.add_row("# Trails", 
-            resort_match['stats']['trails'])
+        resort_table.add_row("# Trails", resort.trails)
 
-        resort_table.add_row("Vertical Drop", 
-            resort_match['stats']['vertical'] + " feet")
+        resort_table.add_row("Vertical Drop", resort.vertical + " feet")
         
         console = Console()
         console.print(resort_table)
@@ -154,15 +146,15 @@ def detail(resort_id):
             style="cyan", 
             no_wrap=True)
 
-        for period in forecast_match['periods']:
+        for period in resort.forecast.periods:
             forecast_table.add_row(
-                period['date'],
-                period['conditions'],
-                period['weather'],
-                str(period['minTemp']),
-                str(period['maxTemp']),
-                str(period['humidity']),
-                str(period['snowIN'])
+                period.period_date,
+                period.conditions,
+                period.weather,
+                str(period.min_temp),
+                str(period.max_temp),
+                str(period.humidity),
+                str(period.snow_in)
             )
 
         console.print(forecast_table)

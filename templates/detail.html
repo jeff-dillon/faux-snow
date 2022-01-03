@@ -14,21 +14,21 @@
         <div class="card-body">
             
             <h3 class="mb-0">
-                <a target="new" href="{{combined['resort']['links']['main_url']}}"><img src="{{ url_for('static', filename=combined['resort']['logo']) }}" width="40" alt="{{combined['resort']['name']}}"></a>
-                {{combined['resort']['name']}} - Forecast Details 
+                <a target="new" href="{{resort.main_url}}"><img src="{{ url_for('static', filename=resort.logo) }}" width="40" alt="{{resort.name}}"></a>
+                {{resort.name}} - Forecast Details 
             </h5>
           <hr class="dotted"></hr>
           <div class="table-responsive">
           <table class="table small" >
             <tr>
                 <th class="text-center" width="12.5%">&nbsp;</th>
-                {% for period in combined['forecast']['periods'] %}
-                    <th  width="12.5%" class="text-center small text-nowrap">{{ period.date }}</th>
+                {% for period in resort.forecast.periods %}
+                    <th  width="12.5%" class="text-center small text-nowrap">{{ period.period_date }}</th>
                 {% endfor %}
             </tr>
             <tr>
                 <th width="12.5%" scope="row">Snow Forecast</th>
-                {% for period in combined['forecast']['periods'] %}
+                {% for period in resort.forecast.periods %}
                     <td class="text-center" width="12.5%">
                         {% if period.conditions == 'Faux' %}
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-thermometer-snow" viewBox="0 0 16 16">
@@ -50,25 +50,25 @@
             </tr>
             <tr>
                 <th width="12.5%" scope="row">Accumulation</th>
-                {% for period in combined['forecast']['periods'] %}
-                    <td class="text-center" width="12.5%"><small>{{period.snowIN}}"</small></td>
+                {% for period in resort.forecast.periods %}
+                    <td class="text-center" width="12.5%"><small>{{period.snow_in}}>"</small></td>
                 {% endfor %}
             </tr>
             <tr>
                 <th width="12.5%" scope="row">Weather</th>
-                {% for period in combined['forecast']['periods'] %}
+                {% for period in resort.forecast.periods %}
                     <td class="text-center" width="12.5%"><small>{{period.weather}}</small></td>
                 {% endfor %}
             </tr>
             <tr>
                 <th width="12.5%" scope="row text-nowrap">Temp (low/high)</th>
-                {% for period in combined['forecast']['periods'] %}
-                    <td class="text-center text-nowrap" width="12.5%"><small>{{period.minTemp}} / {{period.maxTemp}}</small></td>
+                {% for period in resort.forecast.periods %}
+                    <td class="text-center text-nowrap" width="12.5%"><small>{{period.min_temp}} / {{period.max_temp}}</small></td>
                 {% endfor %}
             </tr>
             <tr>
                 <th width="12.5%" scope="row">Relative Humidity</th>
-                {% for period in combined['forecast']['periods'] %}
+                {% for period in resort.forecast.periods %}
                     <td class="text-center" width="12.5%"><small>{{period.humidity}}%</small></td>
                 {% endfor %}
             </tr>
@@ -76,7 +76,7 @@
         </div>
             <p></p>
           <div class="d-flex justify-content-between align-items-center">
-            <small class="text-muted">Last updated: {{combined['forecast']['forecast_date']}}</small>
+            <small class="text-muted">Last updated: {{resort.forecast.forecast_date}}</small>
           </div>
         </div>
       </div>
@@ -89,38 +89,38 @@
           <div class="card-body">
               
               <h3 class="mb-0">
-                  <a target="new" href="{{combined['resort']['links']['main_url']}}"><img src="{{ url_for('static', filename=combined['resort']['logo']) }}" width="40" alt="{{combined['resort']['name']}}"></a>
-                  {{combined['resort']['name']}} - Resort Details
+                  <a target="new" href="{{resort.main_url}}"><img src="{{ url_for('static', filename=resort.logo) }}" width="40" alt="resort.name}}"></a>
+                  {{resort.name}} - Resort Details
               </h5>
             <hr class="dotted"></hr>
               <table cellpadding="6" cellspacing="6">
                   <tr>
                       <th scope="row">Skiable Terrain (acres)</td>
-                      <td>{{combined['resort']['stats']['acres']}}</td>
+                      <td>{resort.acres}}</td>
                   </tr>
                   <tr>
                       <th scope="row"># Trail</td>
-                      <td>{{combined['resort']['stats']['trails']}}</td>
+                      <td>{{resort.trails}}</td>
                   </tr>
                   <tr>
                       <th scope="row"># Lifts</td>
-                      <td>{{combined['resort']['stats']['lifts']}}</td>
+                      <td>{{resort.lifts}}</td>
                   </tr>
                   <tr>
                       <th scope="row">Vertical Drop (feet)</td>
-                      <td>{{combined['resort']['stats']['vertical']}}</td>
+                      <td>{resort.vertical}}</td>
                   </tr>
                   <tr>
                       <th  scope="row" valign="top">Links</td>
                       <td>
-                          <a href="{{combined['resort']['links']['main_url']}}">Resort Website</a></br>
-                          <a href="{{combined['resort']['links']['conditions_url']}}">Resort Conditions</a></br>
-                          <a href="{{combined['resort']['links']['map_url']}}">Google Maps</a></td>
+                          <a href="{{resort.main_url}}">Resort Website</a></br>
+                          <a href="{{resort.conditions_url}}">Resort Conditions</a></br>
+                          <a href="{{resort.map_url}}">Google Maps</a></td>
                       </td>
                   </tr>
                   <tr>
                     <th scope="row">Address</td>
-                    <td>{{combined['resort']['location']['address']}}</td>
+                    <td>{{resort.address}}</td>
                 </tr>
               </table>
               <p></p>
