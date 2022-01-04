@@ -1,5 +1,5 @@
 from flask import Flask, render_template, abort
-from fauxsnow import FauxSnow, Resort, ResortModel, Forecast, ForecastPeriod, ForecastModel, ForecastAPILoader
+from fauxsnow import ResortModel, ForecastAPILoader, ForecastModel
 
 app = Flask(__name__)
  
@@ -24,13 +24,14 @@ def detail(text_id):
 @app.route("/refresh")
 def refresh():
     rm = ResortModel()
+    fm = ForecastModel()
     resorts = rm.get_all_resorts()
     fAPI = ForecastAPILoader()
     forecasts = fAPI.load_forecasts_from_api(resorts)
     # if the api call returns None, fail gracefully.
     message = ''
     if forecasts:
-        fAPI.save_forecasts(forecasts)
+        fm.save_forecasts(forecasts)
         message = 'Updated forecasts'
     else:
         message = 'could not update forecasts'

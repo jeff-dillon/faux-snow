@@ -1,4 +1,4 @@
-from fauxsnow import Resort, ResortModel, Forecast, ForecastModel, ForecastPeriod, ForecastAPILoader, FauxSnow
+from fauxsnow import ResortModel, ForecastModel, ForecastAPILoader
 from rich import print
 from rich.console import Console
 from rich.table import Table
@@ -10,13 +10,14 @@ def refresh():
 
     """
     rm = ResortModel()
-    resorts = rm.get_all_resorts()
+    fm = ForecastModel()
+    resorts = rm.get_all_resorts(False)
     fAPI = ForecastAPILoader()
     forecasts = fAPI.load_forecasts_from_api(resorts)
 
     # if the api call returns None, fail gracefully.
     if forecasts:
-        fAPI.save_forecasts(forecasts)
+        fm.save_forecasts(forecasts)
         print('Updated forecasts')
     else:
         print('could not update forecasts')

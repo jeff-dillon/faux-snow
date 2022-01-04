@@ -3,6 +3,7 @@ charset-normalizer==2.0.9
 click==8.0.3
 colorama==0.4.4
 commonmark==0.9.1
+dataclasses-json==0.5.6
 Flask==2.0.2
 gunicorn==20.1.0
 idna==3.3
@@ -10,11 +11,15 @@ importlib-metadata==4.10.0
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
+marshmallow==3.14.1
+marshmallow-enum==1.5.1
+mypy-extensions==0.4.3
 numpy==1.21.5
 Pygments==2.10.0
 requests==2.26.0
 rich==10.16.1
 typing-extensions==4.0.1
+typing-inspect==0.7.1
 urllib3==1.26.7
 Werkzeug==2.0.2
 zipp==3.6.0

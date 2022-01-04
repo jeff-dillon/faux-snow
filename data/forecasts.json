@@ -1,669 +1,127 @@
 [
     {
-        "text_id": "perfect-north-slopes",
-        "forecast_date": "02/01/2022 02:47 PM",
+        "resort_id": "perfect-north-slopes",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 23,
-                "maxTemp": 38,
-                "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 75,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 22,
-                "maxTemp": 35,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 50,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 34,
-                "maxTemp": 43,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 46,
-                "conditions": ""
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 17,
-                "maxTemp": 44,
-                "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 53,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 10,
-                "maxTemp": 26,
-                "snowIN": 0.02,
-                "weather": "Isolated Snow Showers",
-                "weatherCoded": "S:L:S",
-                "humidity": 54,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 14,
-                "maxTemp": 25,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 44,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 15,
-                "maxTemp": 42,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 45,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "paoli-peaks",
-        "forecast_date": "02/01/2022 02:47 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 22,
-                "maxTemp": 38,
-                "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 72,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 21,
-                "maxTemp": 35,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 59,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 31,
-                "maxTemp": 47,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": ""
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 16,
-                "maxTemp": 43,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 60,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 8,
-                "maxTemp": 25,
-                "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 68,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 14,
-                "maxTemp": 26,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 48,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 18,
-                "maxTemp": 45,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 52,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "ober-gatlinburg",
-        "forecast_date": "02/01/2022 02:47 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 27,
-                "maxTemp": 58,
-                "snowIN": 0,
-                "weather": "Rain",
-                "weatherCoded": "L::R",
-                "humidity": 76,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 21,
-                "maxTemp": 35,
-                "snowIN": 1.06,
-                "weather": "Scattered Snow Showers",
-                "weatherCoded": "C:L:S",
-                "humidity": 59,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 28,
-                "maxTemp": 45,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 51,
-                "conditions": ""
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 35,
-                "maxTemp": 47,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 69,
-                "conditions": ""
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 19,
-                "maxTemp": 44,
-                "snowIN": 0.4,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C:L:R",
-                "humidity": 63,
-                "conditions": ""
-            },
-            {
-                "date": "Fri 07",
+                "date": "Mon 3",
                 "minTemp": 20,
-                "maxTemp": 33,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 51,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 21,
-                "maxTemp": 46,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 55,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "winterplace",
-        "forecast_date": "02/01/2022 02:47 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 23,
-                "maxTemp": 51,
-                "snowIN": 0,
-                "weather": "Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 88,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 16,
-                "maxTemp": 26,
-                "snowIN": 0.9,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 65,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 25,
-                "maxTemp": 40,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 24,
-                "maxTemp": 41,
-                "snowIN": 0.02,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 71,
-                "conditions": ""
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 15,
-                "maxTemp": 33,
-                "snowIN": 0.23,
-                "weather": "Chance of Snow Showers",
-                "weatherCoded": "C:L:SW",
-                "humidity": 64,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 11,
-                "maxTemp": 23,
-                "snowIN": 0.11,
-                "weather": "Chance of Snow Showers",
-                "weatherCoded": "C:L:SW",
-                "humidity": 60,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 14,
-                "maxTemp": 37,
+                "maxTemp": 35,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
                 "humidity": 49,
                 "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "snowshoe",
-        "forecast_date": "02/01/2022 02:47 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 20,
-                "maxTemp": 47,
-                "snowIN": 3.94,
-                "weather": "Wintry Mix",
-                "weatherCoded": "L:L:WM",
-                "humidity": 89,
-                "conditions": "Snow"
             },
             {
-                "date": "Mon 03",
-                "minTemp": 16,
-                "maxTemp": 21,
-                "snowIN": 0.79,
-                "weather": "Isolated Snow Showers",
-                "weatherCoded": "S:L:SW",
-                "humidity": 69,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 23,
-                "maxTemp": 35,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 50,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 20,
-                "maxTemp": 35,
-                "snowIN": 0.36,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 74,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 12,
-                "maxTemp": 28,
-                "snowIN": 0.62,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 59,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 7,
-                "maxTemp": 16,
-                "snowIN": 0.22,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 69,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 10,
-                "maxTemp": 29,
-                "snowIN": 0.13,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 50,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "canaan-valley",
-        "forecast_date": "02/01/2022 02:47 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 18,
-                "maxTemp": 52,
-                "snowIN": 0,
-                "weather": "Chance of Wintry Mix",
-                "weatherCoded": "C:L:WM",
-                "humidity": 89,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 15,
-                "maxTemp": 26,
-                "snowIN": 0.47,
-                "weather": "Snow Showers",
-                "weatherCoded": ":L:SW",
-                "humidity": 69,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 25,
-                "maxTemp": 40,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 44,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 20,
-                "maxTemp": 41,
-                "snowIN": 0.54,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 67,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 13,
-                "maxTemp": 31,
-                "snowIN": 1.05,
-                "weather": "Snow Showers",
-                "weatherCoded": ":L:SW",
-                "humidity": 56,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 8,
-                "maxTemp": 21,
-                "snowIN": 0.44,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 67,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 11,
-                "maxTemp": 33,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "timberline-mountain",
-        "forecast_date": "02/01/2022 02:47 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 18,
-                "maxTemp": 50,
-                "snowIN": 0,
-                "weather": "Chance of Wintry Mix",
-                "weatherCoded": "C:L:WM",
-                "humidity": 86,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 14,
-                "maxTemp": 23,
-                "snowIN": 0.55,
-                "weather": "Snow Showers",
-                "weatherCoded": ":L:SW",
-                "humidity": 72,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 24,
-                "maxTemp": 36,
+                "date": "Tue 4",
+                "minTemp": 35,
+                "maxTemp": 43,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
                 "humidity": 47,
-                "conditions": "Faux"
+                "conditions": ""
             },
             {
-                "date": "Wed 05",
-                "minTemp": 20,
-                "maxTemp": 38,
-                "snowIN": 0.46,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 69,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 12,
-                "maxTemp": 28,
-                "snowIN": 0.9,
-                "weather": "Snow Showers",
-                "weatherCoded": ":L:SW",
-                "humidity": 57,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 7,
-                "maxTemp": 17,
-                "snowIN": 0.37,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 70,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 10,
-                "maxTemp": 30,
+                "date": "Wed 5",
+                "minTemp": 17,
+                "maxTemp": 41,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
                 "humidity": 52,
                 "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 9,
+                "maxTemp": 24,
+                "snowIN": 0.9,
+                "weather": "Light Snow",
+                "weatherCoded": "L::S",
+                "humidity": 56,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 11,
+                "maxTemp": 22,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 52,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 32,
+                "maxTemp": 41,
+                "snowIN": 0.2,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 51,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 22,
+                "maxTemp": 47,
+                "snowIN": 0.31,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 77,
+                "conditions": ""
             }
         ]
     },
     {
-        "text_id": "cataloochee",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "paoli-peaks",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
+                "date": "Mon 3",
                 "minTemp": 22,
-                "maxTemp": 54,
+                "maxTemp": 35,
                 "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 81,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 17,
-                "maxTemp": 30,
-                "snowIN": 1.34,
-                "weather": "Snow Showers",
-                "weatherCoded": ":L:SW",
-                "humidity": 44,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 25,
-                "maxTemp": 39,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 52,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 60,
                 "conditions": "Faux"
             },
             {
-                "date": "Wed 05",
-                "minTemp": 28,
+                "date": "Tue 4",
+                "minTemp": 33,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 45,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 18,
                 "maxTemp": 40,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 69,
-                "conditions": ""
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 17,
-                "maxTemp": 39,
-                "snowIN": 0.21,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 67,
+                "humidity": 56,
                 "conditions": "Faux"
             },
             {
-                "date": "Fri 07",
-                "minTemp": 19,
-                "maxTemp": 29,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 50,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 24,
-                "maxTemp": 42,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 43,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "beech-mountain",
-        "forecast_date": "02/01/2022 02:48 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 20,
-                "maxTemp": 52,
-                "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 84,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 17,
-                "maxTemp": 26,
-                "snowIN": 2.21,
+                "date": "Thu 6",
+                "minTemp": 6,
+                "maxTemp": 24,
+                "snowIN": 2.22,
                 "weather": "Snow Showers",
-                "weatherCoded": "L:L:SW",
-                "humidity": 51,
+                "weatherCoded": "L::SW",
+                "humidity": 73,
                 "conditions": "Snow"
             },
             {
-                "date": "Tue 04",
-                "minTemp": 22,
-                "maxTemp": 32,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 52,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 27,
-                "maxTemp": 37,
-                "snowIN": 0.02,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 70,
-                "conditions": ""
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 14,
-                "maxTemp": 34,
-                "snowIN": 0.41,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 75,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 14,
+                "date": "Fri 7",
+                "minTemp": 12,
                 "maxTemp": 22,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
@@ -672,74 +130,454 @@
                 "conditions": "Faux"
             },
             {
-                "date": "Sat 08",
-                "minTemp": 19,
-                "maxTemp": 34,
+                "date": "Sat 8",
+                "minTemp": 33,
+                "maxTemp": 43,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": "Faux"
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 56,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 21,
+                "maxTemp": 48,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:RW",
+                "humidity": 88,
+                "conditions": ""
             }
         ]
     },
     {
-        "text_id": "sugar-mountain",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "ober-gatlinburg",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 23,
-                "maxTemp": 54,
+                "date": "Mon 3",
+                "minTemp": 20,
+                "maxTemp": 30,
                 "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C::RW",
-                "humidity": 80,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 65,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 30,
+                "maxTemp": 44,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 55,
                 "conditions": ""
             },
             {
-                "date": "Mon 03",
+                "date": "Wed 5",
+                "minTemp": 30,
+                "maxTemp": 46,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 64,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
                 "minTemp": 17,
-                "maxTemp": 29,
-                "snowIN": 1.59,
-                "weather": "Snow Showers",
-                "weatherCoded": "L:L:SW",
+                "maxTemp": 45,
+                "snowIN": 0.38,
+                "weather": "Chance of Sleet",
+                "weatherCoded": "C:L:IP",
+                "humidity": 60,
+                "conditions": ""
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 19,
+                "maxTemp": 30,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 56,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 34,
+                "maxTemp": 47,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 51,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 36,
+                "maxTemp": 51,
+                "snowIN": 0,
+                "weather": "Rain",
+                "weatherCoded": "L::R",
+                "humidity": 78,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "winterplace",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 13,
+                "maxTemp": 26,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 73,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 22,
+                "maxTemp": 38,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 55,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 24,
+                "maxTemp": 40,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 69,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 14,
+                "maxTemp": 35,
+                "snowIN": 0.7,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 61,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 9,
+                "maxTemp": 19,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 68,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 26,
+                "maxTemp": 37,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 53,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 29,
+                "maxTemp": 44,
+                "snowIN": 0,
+                "weather": "Showers",
+                "weatherCoded": "L::RW",
+                "humidity": 84,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "snowshoe",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 14,
+                "maxTemp": 21,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 78,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 20,
+                "maxTemp": 34,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 56,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 20,
+                "maxTemp": 34,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 73,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 10,
+                "maxTemp": 30,
+                "snowIN": 0.85,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
                 "humidity": 56,
                 "conditions": "Snow"
             },
             {
-                "date": "Tue 04",
+                "date": "Fri 7",
+                "minTemp": 6,
+                "maxTemp": 13,
+                "snowIN": 0.03,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 74,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 21,
+                "maxTemp": 29,
+                "snowIN": 0.08,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 56,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 25,
+                "maxTemp": 39,
+                "snowIN": 2.72,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C::WM",
+                "humidity": 87,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "canaan-valley",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 16,
+                "maxTemp": 27,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 74,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 25,
+                "maxTemp": 40,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 47,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 20,
+                "maxTemp": 40,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 66,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 12,
+                "maxTemp": 32,
+                "snowIN": 0.47,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 55,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 7,
+                "maxTemp": 19,
+                "snowIN": 0.12,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 73,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 22,
+                "maxTemp": 33,
+                "snowIN": 0.04,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 53,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 26,
+                "maxTemp": 44,
+                "snowIN": 2.88,
+                "weather": "Wintry Mix",
+                "weatherCoded": "L::WM",
+                "humidity": 85,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "timberline-mountain",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 14,
+                "maxTemp": 24,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 76,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
                 "minTemp": 24,
                 "maxTemp": 36,
                 "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 59,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 52,
                 "conditions": "Faux"
             },
             {
-                "date": "Wed 05",
-                "minTemp": 28,
-                "maxTemp": 40,
-                "snowIN": 0.01,
+                "date": "Wed 5",
+                "minTemp": 19,
+                "maxTemp": 37,
+                "snowIN": 0,
                 "weather": "Mostly Cloudy",
                 "weatherCoded": "::BK",
-                "humidity": 75,
+                "humidity": 68,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 10,
+                "maxTemp": 29,
+                "snowIN": 0.39,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 57,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 6,
+                "maxTemp": 16,
+                "snowIN": 0.1,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 76,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 21,
+                "maxTemp": 29,
+                "snowIN": 0.06,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 57,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 25,
+                "maxTemp": 41,
+                "snowIN": 3.47,
+                "weather": "Wintry Mix",
+                "weatherCoded": "L::WM",
+                "humidity": 88,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "cataloochee",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 19,
+                "maxTemp": 28,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 44,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 25,
+                "maxTemp": 39,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 45,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 26,
+                "maxTemp": 39,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 68,
                 "conditions": ""
             },
             {
-                "date": "Thu 06",
-                "minTemp": 16,
-                "maxTemp": 38,
-                "snowIN": 0.22,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 69,
-                "conditions": "Faux"
+                "date": "Thu 6",
+                "minTemp": 17,
+                "maxTemp": 39,
+                "snowIN": 0.38,
+                "weather": "Wintry Mix",
+                "weatherCoded": "L:L:WM",
+                "humidity": 63,
+                "conditions": "Snow"
             },
             {
-                "date": "Fri 07",
-                "minTemp": 16,
+                "date": "Fri 7",
+                "minTemp": 17,
                 "maxTemp": 26,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
@@ -748,197 +586,121 @@
                 "conditions": "Faux"
             },
             {
-                "date": "Sat 08",
-                "minTemp": 21,
-                "maxTemp": 37,
-                "snowIN": 0,
+                "date": "Sat 8",
+                "minTemp": 30,
+                "maxTemp": 42,
+                "snowIN": 0.01,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": "Faux"
+                "humidity": 53,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 36,
+                "maxTemp": 46,
+                "snowIN": 0,
+                "weather": "Showers",
+                "weatherCoded": "L:L:RW",
+                "humidity": 74,
+                "conditions": ""
             }
         ]
     },
     {
-        "text_id": "wolf-ridge",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "beech-mountain",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 27,
-                "maxTemp": 57,
-                "snowIN": 0,
-                "weather": "Rain",
-                "weatherCoded": "L::R",
-                "humidity": 77,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 19,
-                "maxTemp": 32,
-                "snowIN": 1.56,
-                "weather": "Scattered Snow Showers",
-                "weatherCoded": "C:L:S",
-                "humidity": 61,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 28,
-                "maxTemp": 42,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 48,
-                "conditions": ""
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 35,
-                "maxTemp": 44,
+                "date": "Mon 3",
+                "minTemp": 18,
+                "maxTemp": 26,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 71,
+                "humidity": 45,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 22,
+                "maxTemp": 33,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 51,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 24,
+                "maxTemp": 36,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 78,
                 "conditions": ""
             },
             {
-                "date": "Thu 06",
-                "minTemp": 17,
-                "maxTemp": 43,
-                "snowIN": 0.55,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
+                "date": "Thu 6",
+                "minTemp": 13,
+                "maxTemp": 34,
+                "snowIN": 0.8,
+                "weather": "Snow Chance of Showers",
+                "weatherCoded": "C:L:SW",
+                "humidity": 68,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 11,
+                "maxTemp": 18,
+                "snowIN": 0.01,
+                "weather": "Snow Showers",
+                "weatherCoded": ":VL:SW",
+                "humidity": 62,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 24,
+                "maxTemp": 33,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
                 "humidity": 60,
                 "conditions": "Faux"
             },
             {
-                "date": "Fri 07",
-                "minTemp": 17,
-                "maxTemp": 30,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 53,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 19,
-                "maxTemp": 43,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 49,
-                "conditions": "Faux"
-            }
-        ]
-    },
-    {
-        "text_id": "appalachian",
-        "forecast_date": "02/01/2022 02:48 PM",
-        "periods": [
-            {
-                "date": "Sun 02",
-                "minTemp": 25,
-                "maxTemp": 59,
-                "snowIN": 0,
-                "weather": "Scattered Showers",
-                "weatherCoded": "C::RW",
-                "humidity": 70,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 19,
-                "maxTemp": 31,
-                "snowIN": 1.59,
-                "weather": "Scattered Snow Showers",
-                "weatherCoded": "C:L:S",
-                "humidity": 57,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 23,
-                "maxTemp": 36,
-                "snowIN": 0,
-                "weather": "Sunny",
-                "weatherCoded": "::CL",
-                "humidity": 40,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 29,
-                "maxTemp": 44,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 56,
-                "conditions": ""
-            },
-            {
-                "date": "Thu 06",
-                "minTemp": 17,
+                "date": "Sun 9",
+                "minTemp": 32,
                 "maxTemp": 41,
-                "snowIN": 0.14,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 63,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Fri 07",
-                "minTemp": 16,
-                "maxTemp": 29,
-                "snowIN": 0.01,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 42,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 20,
-                "maxTemp": 38,
-                "snowIN": 0.1,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 38,
-                "conditions": "Faux"
+                "snowIN": 0.32,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 78,
+                "conditions": "Snow"
             }
         ]
     },
     {
-        "text_id": "ski-sapphire",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "sugar-mountain",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 28,
-                "maxTemp": 57,
+                "date": "Mon 3",
+                "minTemp": 18,
+                "maxTemp": 29,
                 "snowIN": 0,
-                "weather": "Rain Showers",
-                "weatherCoded": "L::RW",
-                "humidity": 83,
-                "conditions": ""
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 55,
+                "conditions": "Faux"
             },
             {
-                "date": "Mon 03",
-                "minTemp": 23,
-                "maxTemp": 39,
-                "snowIN": 0.79,
-                "weather": "Snow Showers",
-                "weatherCoded": ":VL:SW",
-                "humidity": 46,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 25,
-                "maxTemp": 39,
+                "date": "Tue 4",
+                "minTemp": 22,
+                "maxTemp": 34,
                 "snowIN": 0,
                 "weather": "Sunny",
                 "weatherCoded": "::CL",
@@ -946,105 +708,495 @@
                 "conditions": "Faux"
             },
             {
-                "date": "Wed 05",
-                "minTemp": 30,
-                "maxTemp": 44,
+                "date": "Wed 5",
+                "minTemp": 26,
+                "maxTemp": 40,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 76,
+                "humidity": 72,
                 "conditions": ""
             },
             {
-                "date": "Thu 06",
-                "minTemp": 21,
-                "maxTemp": 43,
-                "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
+                "date": "Thu 6",
+                "minTemp": 17,
+                "maxTemp": 38,
+                "snowIN": 0.42,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
                 "humidity": 65,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 14,
+                "maxTemp": 22,
+                "snowIN": 0.01,
+                "weather": "Snow Showers",
+                "weatherCoded": ":VL:SW",
+                "humidity": 62,
                 "conditions": "Faux"
             },
             {
-                "date": "Fri 07",
-                "minTemp": 22,
-                "maxTemp": 37,
+                "date": "Sat 8",
+                "minTemp": 25,
+                "maxTemp": 36,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 41,
+                "humidity": 56,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 35,
+                "maxTemp": 44,
+                "snowIN": 0,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 76,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "wolf-ridge",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 19,
+                "maxTemp": 28,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 59,
                 "conditions": "Faux"
             },
             {
-                "date": "Sat 08",
-                "minTemp": 25,
+                "date": "Tue 4",
+                "minTemp": 27,
                 "maxTemp": 41,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 55,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 29,
+                "maxTemp": 43,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 67,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 16,
+                "maxTemp": 43,
+                "snowIN": 0.25,
+                "weather": "Isolated Sleet",
+                "weatherCoded": "S:L:IP",
+                "humidity": 59,
+                "conditions": ""
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 16,
+                "maxTemp": 25,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 64,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 31,
+                "maxTemp": 43,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 54,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 34,
+                "maxTemp": 49,
+                "snowIN": 0,
+                "weather": "Rain",
+                "weatherCoded": "L:L:R",
+                "humidity": 79,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "appalachian",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 17,
+                "maxTemp": 30,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 62,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 22,
+                "maxTemp": 36,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 50,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 26,
+                "maxTemp": 42,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 60,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 15,
+                "maxTemp": 41,
+                "snowIN": 0.26,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 50,
+                "conditions": ""
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 14,
+                "maxTemp": 25,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 52,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 25,
+                "maxTemp": 38,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 47,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 34,
+                "maxTemp": 47,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:RW",
+                "humidity": 72,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "ski-sapphire",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 24,
+                "maxTemp": 38,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 48,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 24,
+                "maxTemp": 38,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 49,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 29,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 66,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 21,
+                "maxTemp": 44,
+                "snowIN": 0,
+                "weather": "Showers",
+                "weatherCoded": "L::RW",
+                "humidity": 65,
+                "conditions": ""
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 21,
+                "maxTemp": 35,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
                 "humidity": 43,
                 "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 28,
+                "maxTemp": 42,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 50,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 38,
+                "maxTemp": 48,
+                "snowIN": 0.01,
+                "weather": "Wintry Mix",
+                "weatherCoded": "L::WM",
+                "humidity": 85,
+                "conditions": ""
             }
         ]
     },
     {
-        "text_id": "wintergreen",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "wintergreen",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 24,
-                "maxTemp": 56,
+                "date": "Mon 3",
+                "minTemp": 16,
+                "maxTemp": 28,
                 "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 76,
-                "conditions": ""
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 55,
+                "conditions": "Faux"
             },
             {
-                "date": "Mon 03",
-                "minTemp": 17,
-                "maxTemp": 32,
-                "snowIN": 3.15,
-                "weather": "Heavy Snow",
-                "weatherCoded": "D:H:S",
-                "humidity": 58,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 22,
+                "date": "Tue 4",
+                "minTemp": 23,
                 "maxTemp": 32,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 62,
+                "humidity": 52,
                 "conditions": "Faux"
             },
             {
-                "date": "Wed 05",
-                "minTemp": 31,
-                "maxTemp": 39,
+                "date": "Wed 5",
+                "minTemp": 30,
+                "maxTemp": 37,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 64,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 68,
                 "conditions": ""
             },
             {
-                "date": "Thu 06",
-                "minTemp": 23,
-                "maxTemp": 37,
-                "snowIN": 0,
+                "date": "Thu 6",
+                "minTemp": 19,
+                "maxTemp": 36,
+                "snowIN": 0.15,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 53,
+                "humidity": 64,
                 "conditions": "Faux"
             },
             {
-                "date": "Fri 07",
-                "minTemp": 14,
-                "maxTemp": 27,
+                "date": "Fri 7",
+                "minTemp": 13,
+                "maxTemp": 25,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 58,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 23,
+                "maxTemp": 29,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 61,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 35,
+                "maxTemp": 42,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 75,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "bryce",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 15,
+                "maxTemp": 32,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 55,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 22,
+                "maxTemp": 40,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 50,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 27,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 57,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 19,
+                "maxTemp": 40,
+                "snowIN": 0.07,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 47,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 11,
+                "maxTemp": 29,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 48,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 23,
+                "maxTemp": 35,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 47,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 30,
+                "maxTemp": 49,
+                "snowIN": 0,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 69,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "massanutten",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 12,
+                "maxTemp": 34,
+                "snowIN": 0.79,
+                "weather": "Chance of Snow",
+                "weatherCoded": "C:H:S",
+                "humidity": 58,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 21,
+                "maxTemp": 39,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 57,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 27,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 68,
+                "conditions": ""
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 19,
+                "maxTemp": 42,
+                "snowIN": 0.23,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 58,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 10,
+                "maxTemp": 31,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 52,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 22,
+                "maxTemp": 35,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
@@ -1052,241 +1204,697 @@
                 "conditions": "Faux"
             },
             {
-                "date": "Sat 08",
-                "minTemp": 16,
-                "maxTemp": 30,
+                "date": "Sun 9",
+                "minTemp": 32,
+                "maxTemp": 48,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 53,
-                "conditions": "Faux"
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 74,
+                "conditions": ""
             }
         ]
     },
     {
-        "text_id": "bryce",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "wisp",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 27,
-                "maxTemp": 62,
-                "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 69,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 17,
-                "maxTemp": 36,
-                "snowIN": 0.82,
-                "weather": "Chance of Wintry Mix",
-                "weatherCoded": "C:L:WM",
-                "humidity": 47,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 24,
-                "maxTemp": 41,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 45,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 28,
-                "maxTemp": 46,
+                "date": "Mon 3",
+                "minTemp": 18,
+                "maxTemp": 24,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 52,
+                "humidity": 67,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 27,
+                "maxTemp": 38,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 42,
                 "conditions": ""
             },
             {
-                "date": "Thu 06",
+                "date": "Wed 5",
                 "minTemp": 20,
-                "maxTemp": 42,
+                "maxTemp": 39,
                 "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 64,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 14,
+                "maxTemp": 29,
+                "snowIN": 0.39,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 52,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 10,
+                "maxTemp": 19,
+                "snowIN": 0.06,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 67,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 23,
+                "maxTemp": 30,
+                "snowIN": 0.49,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 51,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 24,
+                "maxTemp": 42,
+                "snowIN": 0.68,
+                "weather": "Wintry Mix",
+                "weatherCoded": "L::WM",
+                "humidity": 82,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "hidden-valley-mo",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 22,
+                "maxTemp": 35,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 36,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 23,
+                "maxTemp": 45,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 40,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 12,
+                "maxTemp": 33,
+                "snowIN": 0.19,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 46,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 1,
+                "maxTemp": 19,
+                "snowIN": 1.5,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 59,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 15,
+                "maxTemp": 24,
+                "snowIN": 0.13,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
                 "humidity": 43,
                 "conditions": "Faux"
             },
             {
-                "date": "Fri 07",
-                "minTemp": 10,
-                "maxTemp": 31,
+                "date": "Sat 8",
+                "minTemp": 33,
+                "maxTemp": 46,
                 "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
-                "humidity": 45,
-                "conditions": "Faux"
+                "weather": "Isolated Showers",
+                "weatherCoded": "S:L:R",
+                "humidity": 55,
+                "conditions": ""
             },
             {
-                "date": "Sat 08",
-                "minTemp": 13,
-                "maxTemp": 36,
+                "date": "Sun 9",
+                "minTemp": 16,
+                "maxTemp": 44,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 45,
-                "conditions": "Faux"
+                "weather": "Isolated Showers",
+                "weatherCoded": "IS:VL:RW",
+                "humidity": 68,
+                "conditions": ""
             }
         ]
     },
     {
-        "text_id": "massanutten",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "snow-creek-mo",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
-                "minTemp": 29,
-                "maxTemp": 64,
+                "date": "Mon 3",
+                "minTemp": 26,
+                "maxTemp": 36,
                 "snowIN": 0,
-                "weather": "Mostly Cloudy",
-                "weatherCoded": "::BK",
-                "humidity": 69,
-                "conditions": ""
-            },
-            {
-                "date": "Mon 03",
-                "minTemp": 15,
-                "maxTemp": 37,
-                "snowIN": 1.81,
-                "weather": "Wintry Mix",
-                "weatherCoded": "D::WM",
-                "humidity": 51,
-                "conditions": "Snow"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 23,
-                "maxTemp": 40,
-                "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 53,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Wed 05",
-                "minTemp": 30,
-                "maxTemp": 46,
-                "snowIN": 0,
-                "weather": "Partly Cloudy",
-                "weatherCoded": "::SC",
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
                 "humidity": 61,
                 "conditions": ""
             },
             {
-                "date": "Thu 06",
-                "minTemp": 22,
+                "date": "Tue 4",
+                "minTemp": 14,
+                "maxTemp": 41,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 65,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 3,
+                "maxTemp": 21,
+                "snowIN": 1.62,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 59,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": -4,
+                "maxTemp": 10,
+                "snowIN": 0.31,
+                "weather": "Snow Showers",
+                "weatherCoded": ":VL:SW",
+                "humidity": 69,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 16,
+                "maxTemp": 23,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 62,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 21,
                 "maxTemp": 44,
                 "snowIN": 0,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 48,
+                "humidity": 71,
                 "conditions": "Faux"
             },
             {
-                "date": "Fri 07",
+                "date": "Sun 9",
                 "minTemp": 11,
-                "maxTemp": 33,
+                "maxTemp": 31,
                 "snowIN": 0,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 51,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Sat 08",
-                "minTemp": 14,
-                "maxTemp": 36,
-                "snowIN": 0.01,
-                "weather": "Mostly Sunny",
-                "weatherCoded": "::FW",
-                "humidity": 48,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 69,
                 "conditions": "Faux"
             }
         ]
     },
     {
-        "text_id": "wisp",
-        "forecast_date": "02/01/2022 02:48 PM",
+        "resort_id": "snow-trails",
+        "forecast_date": "03/01/2022 09:34 PM",
         "periods": [
             {
-                "date": "Sun 02",
+                "date": "Mon 3",
                 "minTemp": 21,
-                "maxTemp": 49,
-                "snowIN": 0.16,
-                "weather": "Chance of Wintry Mix",
-                "weatherCoded": "C:L:WM",
-                "humidity": 88,
+                "maxTemp": 29,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 74,
                 "conditions": "Faux"
             },
             {
-                "date": "Mon 03",
-                "minTemp": 18,
-                "maxTemp": 25,
-                "snowIN": 0.02,
-                "weather": "Isolated Snow Showers",
-                "weatherCoded": "S:L:S",
-                "humidity": 61,
-                "conditions": "Faux"
-            },
-            {
-                "date": "Tue 04",
-                "minTemp": 26,
-                "maxTemp": 37,
+                "date": "Tue 4",
+                "minTemp": 31,
+                "maxTemp": 38,
                 "snowIN": 0,
                 "weather": "Mostly Sunny",
                 "weatherCoded": "::FW",
-                "humidity": 46,
+                "humidity": 52,
                 "conditions": ""
             },
             {
-                "date": "Wed 05",
-                "minTemp": 20,
-                "maxTemp": 40,
-                "snowIN": 0.36,
+                "date": "Wed 5",
+                "minTemp": 14,
+                "maxTemp": 38,
+                "snowIN": 0,
                 "weather": "Mostly Cloudy",
                 "weatherCoded": "::BK",
                 "humidity": 63,
                 "conditions": "Faux"
             },
             {
-                "date": "Thu 06",
-                "minTemp": 15,
-                "maxTemp": 28,
-                "snowIN": 0.65,
-                "weather": "Scattered Snow Showers",
-                "weatherCoded": "C:L:S",
-                "humidity": 56,
+                "date": "Thu 6",
+                "minTemp": 12,
+                "maxTemp": 22,
+                "snowIN": 0.34,
+                "weather": "Chance of Snow Showers",
+                "weatherCoded": "C:L:SW",
+                "humidity": 58,
                 "conditions": "Snow"
             },
             {
-                "date": "Fri 07",
+                "date": "Fri 7",
                 "minTemp": 9,
                 "maxTemp": 20,
-                "snowIN": 0.23,
-                "weather": "Isolated Snow Showers",
-                "weatherCoded": "S:L:S",
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 62,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 27,
+                "maxTemp": 34,
+                "snowIN": 2.37,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 53,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 22,
+                "maxTemp": 41,
+                "snowIN": 1.01,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 83,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "mad-river",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 19,
+                "maxTemp": 28,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 56,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 31,
+                "maxTemp": 37,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 56,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 14,
+                "maxTemp": 36,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 61,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 10,
+                "maxTemp": 21,
+                "snowIN": 0.59,
+                "weather": "Scattered Snow Showers",
+                "weatherCoded": "C:L:S",
+                "humidity": 65,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 10,
+                "maxTemp": 20,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 62,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 28,
+                "maxTemp": 35,
+                "snowIN": 2.1,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 61,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 22,
+                "maxTemp": 41,
+                "snowIN": 0.13,
+                "weather": "Scattered Showers",
+                "weatherCoded": "C:L:R",
+                "humidity": 81,
+                "conditions": ""
+            }
+        ]
+    },
+    {
+        "resort_id": "boston-mills-brandywine",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 22,
+                "maxTemp": 31,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 68,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 32,
+                "maxTemp": 40,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 49,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 17,
+                "maxTemp": 41,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 58,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": 18,
+                "maxTemp": 26,
+                "snowIN": 0.32,
+                "weather": "Chance of Snow Showers",
+                "weatherCoded": "C:L:SW",
+                "humidity": 55,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 12,
+                "maxTemp": 25,
+                "snowIN": 0.27,
+                "weather": "Chance of Snow Showers",
+                "weatherCoded": "C:L:SW",
+                "humidity": 60,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 28,
+                "maxTemp": 36,
+                "snowIN": 1.54,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 47,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 23,
+                "maxTemp": 43,
+                "snowIN": 1.01,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 77,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "alpine-valley-oh",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 21,
+                "maxTemp": 29,
+                "snowIN": 0,
+                "weather": "Mostly Cloudy",
+                "weatherCoded": "::BK",
+                "humidity": 78,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 31,
+                "maxTemp": 38,
+                "snowIN": 0,
+                "weather": "Mostly Sunny",
+                "weatherCoded": "::FW",
+                "humidity": 54,
+                "conditions": ""
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 17,
+                "maxTemp": 39,
+                "snowIN": 0.04,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
                 "humidity": 65,
                 "conditions": "Faux"
             },
             {
-                "date": "Sat 08",
+                "date": "Thu 6",
+                "minTemp": 18,
+                "maxTemp": 24,
+                "snowIN": 1.37,
+                "weather": "Chance of Snow Showers",
+                "weatherCoded": "C:L:SW",
+                "humidity": 66,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Fri 7",
                 "minTemp": 11,
-                "maxTemp": 31,
-                "snowIN": 0.06,
+                "maxTemp": 24,
+                "snowIN": 0.92,
+                "weather": "Chance of Snow Showers",
+                "weatherCoded": "C:L:SW",
+                "humidity": 72,
+                "conditions": "Snow"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 26,
+                "maxTemp": 34,
+                "snowIN": 2.05,
                 "weather": "Partly Cloudy",
                 "weatherCoded": "::SC",
-                "humidity": 51,
+                "humidity": 54,
+                "conditions": ""
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 23,
+                "maxTemp": 41,
+                "snowIN": 1.5,
+                "weather": "Chance of Wintry Mix",
+                "weatherCoded": "C:L:WM",
+                "humidity": 84,
+                "conditions": "Snow"
+            }
+        ]
+    },
+    {
+        "resort_id": "snow-star",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 18,
+                "maxTemp": 23,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 66,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 12,
+                "maxTemp": 35,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 66,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 2,
+                "maxTemp": 15,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 69,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": -11,
+                "maxTemp": 7,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 69,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 5,
+                "maxTemp": 11,
+                "snowIN": 0.62,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 66,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 19,
+                "maxTemp": 33,
+                "snowIN": 0.17,
+                "weather": "Wintry Mix",
+                "weatherCoded": ":VL:WM",
+                "humidity": 68,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 3,
+                "maxTemp": 27,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 73,
+                "conditions": "Faux"
+            }
+        ]
+    },
+    {
+        "resort_id": "chestnut-mountain",
+        "forecast_date": "03/01/2022 09:34 PM",
+        "periods": [
+            {
+                "date": "Mon 3",
+                "minTemp": 13,
+                "maxTemp": 19,
+                "snowIN": 0,
+                "weather": "Sunny",
+                "weatherCoded": "::CL",
+                "humidity": 74,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Tue 4",
+                "minTemp": 11,
+                "maxTemp": 32,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 74,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Wed 5",
+                "minTemp": 0,
+                "maxTemp": 14,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 72,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Thu 6",
+                "minTemp": -12,
+                "maxTemp": 8,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 76,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Fri 7",
+                "minTemp": 1,
+                "maxTemp": 7,
+                "snowIN": 0.38,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 74,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sat 8",
+                "minTemp": 16,
+                "maxTemp": 29,
+                "snowIN": 0.11,
+                "weather": "Wintry Mix",
+                "weatherCoded": ":L:WM",
+                "humidity": 77,
+                "conditions": "Faux"
+            },
+            {
+                "date": "Sun 9",
+                "minTemp": 1,
+                "maxTemp": 25,
+                "snowIN": 0,
+                "weather": "Partly Cloudy",
+                "weatherCoded": "::SC",
+                "humidity": 73,
                 "conditions": "Faux"
             }
         ]
