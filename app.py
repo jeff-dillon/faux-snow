@@ -17,7 +17,10 @@ def detail(text_id):
     try:
         resort_model = ResortModel()
         resort = resort_model.get_resort_by_id(text_id)
-        return render_template("detail.html", resort=resort)
+        if resort:
+            return render_template("detail.html", resort=resort)
+        else:
+            abort(500)
     except IndexError:
         abort(404)
 
@@ -43,3 +46,12 @@ def about():
     resorts = rm.get_all_resorts()
     num_resorts = len(resorts)
     return render_template("about.html", resorts=resorts, num_resorts=num_resorts)
+
+@app.errorhandler(404)
+def page_not_found(error):
+   return render_template('404.html', title = '404 Not Found'), 404
+
+@app.errorhandler(500)
+def page_not_found(error):
+   return render_template('404.html', title = 'Something went wrong'), 500
+ 
